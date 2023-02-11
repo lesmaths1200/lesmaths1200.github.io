@@ -1,9 +1,11 @@
 body{
   background-color:   green;
-  font-family: Poppins, semi bold;
+  font-family: Poppins;
+  font-size: 15px
 }
 
 h1CB{
  text-align:  center;
   color:blue;
+  font-size: 25px
 }
