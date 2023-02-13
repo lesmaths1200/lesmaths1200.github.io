@@ -109,3 +109,8 @@ th {
 th {
           text-align: left;
 }
+a[href*="youtu"]{
+	background: url(../img/iconeYT.jpg) no-repeat right top;
+	padding-right:20px;
+}
+	
