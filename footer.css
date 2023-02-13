@@ -6,10 +6,10 @@ footer {
 	background-color: black;
 	color: white;
 	text-align: center;
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 	font-family: "Simplifica", sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10px 0;
+	/* padding: 10px 0; */
 }
