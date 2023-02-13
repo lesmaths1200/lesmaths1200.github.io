@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de l'enseignant</title>
-	<link href="https://fonts.googleapis.com/css?family=Simplifica" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="header.css" />
+	<link href="https://fonts.googleapis.com/css?family=Simplifica" rel="stylesheet">
   </head>
   <body>
- <?php
- include("header.html");
- ?>
+    <header></header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $("header").load("header.html");
+      });
+    </script>
     <main>
-      <p>Bienvenue sur ma page internet. Vous trouverez ici des informations sur les différents que je propose.</p>
+      <p>Bienvenue sur ma page internet. Vous trouverez ici des informations sur
+        les différents que je propose.</p>
     </main>
     <footer>
       <p>Copyright © 2023 - Tous droits réservés</p>
