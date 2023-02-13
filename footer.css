@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Simplifica';
+  src: url('Simplifica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 footer {
 	position: absolute;
 	bottom: 0;
