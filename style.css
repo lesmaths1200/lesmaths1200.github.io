@@ -73,9 +73,6 @@ footer {
   font-family: "Simplifica", sans-serif;
   position: relative;
 }
-
-<link href="https://fonts.googleapis.com/css?family=Simplifica" rel="stylesheet">
-
 @font-face {
   font-family: 'Simplifica';
   src: url('Simplifica.ttf') format('truetype');
