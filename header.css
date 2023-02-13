@@ -1,8 +1,10 @@
 header {
-  background-color: blueviolet;
+  background-color: black;
+  color: white;
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  font-family:'simplifica', sans-serif;
 }
 
 nav {
