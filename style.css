@@ -5,15 +5,18 @@ header nav {
   display: flex;
   justify-content: center;
   padding: 10px 20px;
+  border: none
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
+  border: none
 }
 
 header nav ul li {
   margin: 0 10px;
+  border: none
 }
 
 header nav ul li a {
@@ -21,6 +24,7 @@ header nav ul li a {
   color: white;
   font-family: "Simplifica", sans-serif;
   text-decoration: none;
+  border: none
 }
 
 main {
@@ -35,7 +39,6 @@ main section {
   color: white;
   font-family: "Simplifica", sans-serif;
   border: none;
-  box-sizing: border-box;
   display: flex;
   flex-basis: calc(33.33% - 20px);
   flex-direction: column;

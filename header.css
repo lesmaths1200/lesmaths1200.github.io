@@ -5,12 +5,14 @@ header {
   justify-content: center;
   padding: 10px 0;
   font-family: "Simplifica", sans-serif;
+  border: none
 }
 
 nav {
   display: flex;
   justify-content: center;
   width: 100%;
+  border: none
 }
 
 ul {
@@ -18,11 +20,13 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  border: none
 }
 
 li {
   flex-grow: 1;
   text-align: center;
+  border: none
 }
 
 a {
@@ -30,6 +34,7 @@ a {
   padding: 10px;
   text-decoration: none;
   color: white;
+  border: none
 }
 
 @media screen and (max-width: 600px) {
