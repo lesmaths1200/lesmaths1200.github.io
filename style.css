@@ -34,7 +34,7 @@ main section {
   background-color: black;
   color: white;
   font-family: "Simplifica", sans-serif;
-  border: 1px solid #333;
+  border: none;
   box-sizing: border-box;
   display: flex;
   flex-basis: calc(33.33% - 20px);
