@@ -3,87 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cours</title>
-    <style>
-      header nav {
-        background-color: #40E0D0;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 20px;
-      }
-      
-      header nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      
-      header nav ul li {
-        margin: 0 10px;
-      }
-      
-      header nav ul li a {
-        color: #fff;
-        text-decoration: none;
-      }
-      
-      main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-      }
-      
-      main section {
-        background-color: #f2f2f2;
-        border: 1px solid #333;
-        box-sizing: border-box;
-        display: flex;
-        flex-basis: calc(33.33% - 20px);
-        flex-direction: column;
-        justify-content: center;
-        margin: 10px;
-        padding: 20px;
-        text-align: center;
-      }
-      
-      footer {
-        background-color: #333;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-        text-align: center;
-      }
-      
-      @media (max-width: 768px) {
-        main section {
-          flex-basis: 100%;
-        }
-      }
-    </style>
+    <title>Site de l'enseignant</title>
+	<link href="https://fonts.googleapis.com/css?family=Simplifica" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-		  <li><a href="cours.html">Cours</a></li>
-          <li><a href="exercices.html">Exercices</a></li>
-          <li><a href="taf.html">Vidéos TAF</a></li>
-		  <li><a href="evacom.html">Vidéos EVACOM</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <?php include("header.html");?>
     <main>
-      <section>
-        <h1>Contenu des cours</h1>
-        <p>Votre contenu de cours sera affiché ici.</p>
-      </section>
+      <p>Bienvenue sur Cours</p>
     </main>
     <footer>
-      <p>Copyright &copy; 2023</p>
+      <p>Copyright © 2023 - Tous droits réservés</p>
     </footer>
   </body>
 </html>
+
