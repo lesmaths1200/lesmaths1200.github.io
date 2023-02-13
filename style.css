@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Simplifica';
+  src: url('Simplifica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 header nav {
   background-color: black;
   color: white;
@@ -72,12 +78,6 @@ footer {
   background-color: black;
   font-family: "Simplifica", sans-serif;
   position: relative;
-}
-@font-face {
-  font-family: 'Simplifica';
-  src: url('Simplifica.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 body {
