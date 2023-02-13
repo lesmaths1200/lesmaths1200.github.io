@@ -1,5 +1,7 @@
 header nav {
-  background-color: #40E0D0;
+  background-color: black;
+  color: white;
+  font-family: "Simplifica", sans-serif;
   display: flex;
   justify-content: center;
   padding: 10px 20px;
@@ -15,7 +17,9 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #fff;
+  background-color: black;
+  color: white;
+  font-family: "Simplifica", sans-serif;
   text-decoration: none;
 }
 
@@ -27,7 +31,9 @@ main {
 }
 
 main section {
-  background-color: #f2f2f2;
+  background-color: black;
+  color: white;
+  font-family: "Simplifica", sans-serif;
   border: 1px solid #333;
   box-sizing: border-box;
   display: flex;
@@ -40,8 +46,9 @@ main section {
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: black;
+  color: white;
+  font-family: "Simplifica", sans-serif;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -54,7 +61,7 @@ footer {
   }
   
   body {
-  background-color: #000;
+  background-color: black;
   font-family: "Simplifica", sans-serif;
 }
 
