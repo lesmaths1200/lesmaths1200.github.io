@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Simplifica';
-  src: url('Simplifica.ttf') format('truetype');
+  src: url(../fonts/'Simplifica.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
