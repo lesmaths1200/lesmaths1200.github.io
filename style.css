@@ -49,13 +49,18 @@ main section {
 }
 
 footer {
-  background-color: black;
-  color: white;
-  font-family: "Simplifica", sans-serif;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px; /* hauteur du pied de page */
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-family: "Simplifica", sans-serif;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
 }
 
 @media (max-width: 768px) {
@@ -66,6 +71,7 @@ footer {
   body {
   background-color: black;
   font-family: "Simplifica", sans-serif;
+  position: relative;
 }
 
 <link href="https://fonts.googleapis.com/css?family=Simplifica" rel="stylesheet">
