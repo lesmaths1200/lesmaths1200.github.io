@@ -67,7 +67,8 @@ ul {
 li {
   flex-grow: 1;
   text-align: center;
-  border: none
+  border: none;
+  display: block
 }
 
 a {
