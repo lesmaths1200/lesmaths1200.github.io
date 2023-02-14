@@ -2,22 +2,25 @@ header {
 	height: 75px; /* hauteur du pied de page */
 	background-color: black;
 	color: white;
-	text-align: center;
-	font-family: Simplifica, sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: none;
-	text-decoration: none;
-	/* padding: 10px 0; */
+	font-family: Simplifica, sans-serif;
 }
 
-header nav {
-  background-color: black;
-  color: white;
+nav ul {
   font-family: Simplifica, sans-serif;
   display: flex;
-  justify-content: center;
-  padding: 10px 20px;
-  border: none
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+	margin: 0 lem;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
 }
