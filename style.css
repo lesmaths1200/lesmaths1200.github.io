@@ -11,3 +11,7 @@ body {
   src: url(../fonts/Simplifica.woff2) format("woff2");
   font-weight: normal;
 }
+
+main {
+  font-family: Simplifica, sans-serif;
+}
