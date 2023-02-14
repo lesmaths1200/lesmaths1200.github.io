@@ -1,9 +1,8 @@
 header {
-	height: 100px; /* hauteur du pied de page */
+	height: 75px; /* hauteur du pied de page */
 	background-color: black;
 	color: white;
 	text-align: center;
-	/*padding-top: 20px;*/
 	font-family: Simplifica, sans-serif;
 	display: flex;
 	justify-content: center;
@@ -11,4 +10,14 @@ header {
 	border: none;
 	text-decoration: none;
 	/* padding: 10px 0; */
+}
+
+header nav {
+  background-color: black;
+  color: white;
+  font-family: Simplifica, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none
 }
