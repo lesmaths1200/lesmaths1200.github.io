@@ -12,9 +12,10 @@ nav-maths {
   display: flex;
   justify-content: center;
   width: 100%;
-  border: none
+  border: none;
   color: white;
 }
+
 
 ul {
   display: flex;
