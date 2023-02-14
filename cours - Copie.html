@@ -5,21 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les maths 1200</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
 	<link rel="stylesheet" type="text/css" href="footer.css">
   </head>
   <body>
-    <header style="background-color: #333; color: #fff;">
-	<nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="cours.html">Cours</a></li>
-      <li><a href="exercices.html">Exercices</a></li>
-      <li><a href="taf.html">Vidéos TAF</a></li>
-      <li><a href="evacom.html">Vidéos EVACOM</a></li>
-	  <li><a href="contact.html">Contact</a></li>
-    </ul>
-	</nav>
-	</header>
+    <header></header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $("header").load("header.html");
+      });
+    </script>
 	<main>
 	<ul>
 		<li><a href="../cours/1-%20Cours%20les%20entiers.pdf">Les entiers<img src="../img/iconePDF.jpg"> </a></li>
