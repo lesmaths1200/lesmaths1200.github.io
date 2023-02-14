@@ -57,7 +57,7 @@ nav li {
 
 
 ul {
-  display: block;
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
