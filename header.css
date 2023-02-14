@@ -8,7 +8,26 @@ header {
   border: none
 }
 
-nav-maths {
+header nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-family: Simplifica, sans-serif;
+  border: none
+}
+
+
+header nav-maths {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  color: white;
+}
+
+.nav-maths {
   display: flex;
   justify-content: center;
   width: 100%;

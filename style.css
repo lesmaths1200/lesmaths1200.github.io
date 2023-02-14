@@ -1,7 +1,6 @@
 @font-face {
   font-family: Simplifica; 
   src: local("Simplifica"), local("Simplifica"); 
-  /* Check how the font is written on the machine --> Right click on file -> Details -> Title */ 
   src: url(../fonts/Simplifica.ttf) format("truetype");
   src: url(../fonts/Simplifica.woff) format("woff");
   src: url(../fonts/Simplifica.woff2) format("woff2");
@@ -21,7 +20,7 @@ header {
 header nav {
   background-color: black;
   color: white;
-  font-family: "Simplifica", sans-serif;
+  font-family: Simplifica, sans-serif;
   display: flex;
   justify-content: center;
   padding: 10px 20px;
