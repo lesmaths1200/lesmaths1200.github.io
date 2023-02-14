@@ -1,87 +1,12 @@
 header {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  font-family: Simplifica, sans-serif;
-  border: none
-}
-
-header nav {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  font-family: Simplifica, sans-serif;
-  border: none
-}
-
-
-header nav-maths {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  border: none;
-  background-color: black;
-  color: white;
-}
-
-.nav-maths {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  border: none;
-  background-color: black;
-  color: white;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  border: none;
-  background-color: black;
-  color: white;
-}
-
-nav li {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  border: none;
-  background-color: black;
-  color: white;
-}
-
-
-ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: none
-}
-
-li {
-  flex-grow: 1;
-  text-align: center;
-  border: none;
-  display: block
-}
-
-a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-  border: none
-}
-
-@media screen and (max-width: 600px) {
-  ul {
-    flex-direction: column;
-  }
- 
+	height: 100px; /* hauteur du pied de page */
+	background-color: black;
+	color: white;
+	text-align: center;
+	/*padding-top: 20px;*/
+	font-family: Simplifica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding: 10px 0; */
 }
