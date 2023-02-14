@@ -8,5 +8,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: none;
+	text-decoration: none;
 	/* padding: 10px 0; */
 }
