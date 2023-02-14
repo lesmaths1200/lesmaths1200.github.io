@@ -37,7 +37,7 @@ header nav-maths {
   color: white;
 }
 
-nav-maths ul {
+nav ul {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -46,7 +46,7 @@ nav-maths ul {
   color: white;
 }
 
-nav-maths li {
+nav li {
   display: flex;
   justify-content: center;
   width: 100%;
