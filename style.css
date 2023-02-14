@@ -33,6 +33,15 @@ header nav ul li a {
   border: none
 }
 
+ul li a {
+  background-color: white;
+  color: black;
+  font-family: "Simplifica", sans-serif;
+  text-decoration: none;
+  border: none
+}
+
+
 main {
   display: flex;
   flex-wrap: wrap;
