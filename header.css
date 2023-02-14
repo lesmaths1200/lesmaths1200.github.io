@@ -28,7 +28,7 @@ header nav-maths {
   color: white;
 }
 
-nav-maths {
+.nav-maths {
   display: flex;
   justify-content: center;
   width: 100%;
