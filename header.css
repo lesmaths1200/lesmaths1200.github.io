@@ -37,6 +37,24 @@ nav-maths {
   color: white;
 }
 
+nav-maths ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+nav-maths li {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
 
 ul {
   display: flex;
