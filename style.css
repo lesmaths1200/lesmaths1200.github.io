@@ -18,16 +18,37 @@ header {
   border: none
 }
 
+header nav {
+  background-color: black;
+  color: white;
+  font-family: "Simplifica", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none
+}
+
+header nav-maths {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  color: white;
+}
+
+
 main {
   font-family: Simplifica, sans-serif;
   color: black;
   justify-content: center;
+  text-align: center;
 }
 
 main section {
   font-family: Simplifica, sans-serif;
   color: black;
   justify-content: center;
+  text-align: center;
 }
 
 body {
