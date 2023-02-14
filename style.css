@@ -1,7 +1,3 @@
-body {
-	background-color: white;
-	color: black;	
-}
 @font-face {
   font-family: Simplifica; 
   src: local("Simplifica"), local("Simplifica"); 
@@ -12,6 +8,28 @@ body {
   font-weight: normal;
 }
 
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-family: Simplifica, sans-serif;
+  border: none
+}
+
 main {
   font-family: Simplifica, sans-serif;
+  color: black;
+}
+
+main section {
+  font-family: Simplifica, sans-serif;
+  color: black;
+}
+
+body {
+	font-family: Simplifica, sans-serif;
+	background-color: white;
+	color: black;	
 }
