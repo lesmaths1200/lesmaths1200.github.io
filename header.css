@@ -24,14 +24,16 @@ header nav-maths {
   justify-content: center;
   width: 100%;
   border: none;
+  background-color: black;
   color: white;
 }
 
-.nav-maths {
+nav-maths {
   display: flex;
   justify-content: center;
   width: 100%;
   border: none;
+  background-color: black;
   color: white;
 }
 
