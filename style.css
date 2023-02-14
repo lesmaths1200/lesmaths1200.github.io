@@ -1,11 +1,13 @@
-@font-face {
-  font-family: Simplifica;
-}
-
 body {
 	background-color: white;
 	color: black;	
 }
-
-
-	
+@font-face {
+  font-family: Simplifica; 
+  src: local("Simplifica"), local("Simplifica"); 
+  /* Check how the font is written on the machine --> Right click on file -> Details -> Title */ 
+  src: url(../fonts/Simplifica.ttf) format("truetype");
+  src: url(../fonts/Simplifica.woff) format("woff");
+  src: url(../fonts/Simplifica.woff2) format("woff2");
+  font-weight: normal;
+}
