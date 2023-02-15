@@ -75,3 +75,7 @@ body {
   padding: 5px;
   margin: 5px;
 }
+
+.cours-maths a {
+  text-decoration: none;
+}
