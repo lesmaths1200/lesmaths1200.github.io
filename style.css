@@ -60,5 +60,6 @@ body {
   font-family: Simplifica, sans-serif;
   text-decoration: none;
   border: none;
+  justify-content: left;
   text-align: left;
 }
