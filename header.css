@@ -3,9 +3,12 @@ header {
 	background-color: black;
 	color: white;
 	display: flex;
-	justify-content: center;
+	/*justify-content: center; test pour la version mobile*/
 	align-items: center;
 	font-family: Simplifica, sans-serif;
+	position: relative; /* test pour la version mobile*/
+	justify-content: space-between; /* test pour la version mobile*/
+
 }
 
 nav ul {
@@ -27,4 +30,8 @@ nav a {
 	font-family: Simplifica, sans-serif;
 	color: white;
 	text-decoration: none;
+}
+
+.menu-sup{
+	
 }
