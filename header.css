@@ -11,16 +11,20 @@ header {
 nav ul {
   font-family: Simplifica, sans-serif;
   display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 nav li {
+	font-family: Simplifica, sans-serif;
 	margin: 0 50px;
+	flex: 1;
 }
 
 nav a {
+	font-family: Simplifica, sans-serif;
 	color: white;
 	text-decoration: none;
 }
