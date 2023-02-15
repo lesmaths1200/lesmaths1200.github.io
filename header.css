@@ -33,5 +33,6 @@ nav a {
 }
 
 nav .menu-sup li{
+	justify-content: center;
 	margin: 0 5px;
 }
