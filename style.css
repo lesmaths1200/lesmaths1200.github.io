@@ -62,16 +62,16 @@ body {
   border: none;
   list-style: disc;
   padding: 0;
-  margin: 40;
+  margin: 5px;
 }
 
 .cours-maths ul {
   list-style: disc;
-  padding: 20px;
-  margin: 20px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .cours-maths li {
-  padding: 20px;
-  margin: 20px;
+  padding: 5px;
+  margin: 5px;
 }
