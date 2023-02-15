@@ -55,3 +55,10 @@ body {
 	background-color: white;
 	color: black;	
 }
+
+.cours-maths ul li a {
+  font-family: "Simplifica", sans-serif;
+  text-decoration: none;
+  border: none;
+  text-align: left;
+}
