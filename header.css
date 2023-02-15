@@ -1,5 +1,5 @@
 header {
-	height: 75px; /* hauteur du pied de page */
+	height: 75px;
 	background-color: black;
 	color: white;
 	display: flex;
@@ -19,7 +19,7 @@ nav ul {
 
 nav li {
 	font-family: Simplifica, sans-serif;
-	margin: 0 50px;
+	margin: 0 150px;
 	flex: 1;
 }
 
