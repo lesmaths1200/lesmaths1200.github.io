@@ -60,9 +60,15 @@ body {
   font-family: Simplifica, sans-serif;
   text-decoration: none;
   border: none;
-  list-style: desc;
+  list-style: disc;
   padding: 0;
   margin: 40;
+}
+
+.cours-maths ul {
+  list-style: disc;
+  padding: 8;
+  margin: 8;
 }
 
 .cours-maths li {
