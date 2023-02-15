@@ -32,6 +32,6 @@ nav a {
 	text-decoration: none;
 }
 
-.menu-sup{
-	
+nav .menu-sup li{
+	margin: 0 5px;
 }
