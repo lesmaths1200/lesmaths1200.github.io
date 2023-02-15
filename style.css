@@ -72,5 +72,6 @@ body {
 }
 
 .cours-maths li {
-  text-align: left;
+  padding: 20px;
+  margin: 20px;
 }
