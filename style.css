@@ -60,7 +60,7 @@ body {
   font-family: Simplifica, sans-serif;
   text-decoration: none;
   border: none;
-  list-style: disc;
+  list-style: none;
   padding: 0;
   margin: 5px;
 }
@@ -72,11 +72,13 @@ body {
 }
 
 .cours-maths li {
-  padding: 5px;
-  margin: 5px;
+	list-style: none;	
+	padding: 5px;
+	margin: 5px;
 }
 
 .cours-maths a {
+	list-style: none;
 	padding: 5px;
 	margin: 5px;	
 	text-decoration: none;
