@@ -3,11 +3,11 @@ header {
 	background-color: black;
 	color: white;
 	display: flex;
-	/*justify-content: center; test pour la version mobile*/
+	justify-content: center; /*test pour la version mobile*/
 	align-items: center;
 	font-family: Simplifica, sans-serif;
-	position: relative; /* test pour la version mobile*/
-	justify-content: space-between; /* test pour la version mobile*/
+	/*position: relative; /* test pour la version mobile*/
+	/*justify-content: space-between; /* test pour la version mobile*/
 
 }
 
@@ -32,12 +32,11 @@ nav a {
 	text-decoration: none;
 }
 
-nav .menu-sup li{
-	align-items: center;
-	justify-content: center;
-	margin: 0 5px;
-}
 
 @media (max-width: 600px) {
-	
+	nav .menu-sup li{
+		align-items: center;
+		justify-content: center;
+		margin: 0 5px;
+		}
 }
