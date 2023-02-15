@@ -33,6 +33,11 @@ nav a {
 }
 
 nav .menu-sup li{
+	align-items: center;
 	justify-content: center;
 	margin: 0 5px;
+}
+
+@media (max-width: 600px) {
+	
 }
