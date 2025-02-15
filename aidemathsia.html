@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aide Mathématiques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        #chat-box {
+            width: 100%;
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: #fff;
+        }
+        #chat-box p {
+            margin: 10px 0;
+        }
+        .user-question {
+            color: #0056b3;
+        }
+        .bot-response {
+            color: #007f00;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aide aux révisions de mathématiques</h1>
+    <div id="chat-box"></div>
+    <form id="question-form">
+        <label for="question">Posez votre question :</label><br>
+        <input type="text" id="question" name="question" style="width: 80%;" required>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <script>
+        const chatBox = document.getElementById("chat-box");
+        const form = document.getElementById("question-form");
+
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            // Récupérer la question de l'utilisateur
+            const questionInput = document.getElementById("question");
+            const userQuestion = questionInput.value;
+            questionInput.value = "";
+
+            // Afficher la question dans la zone de chat
+            chatBox.innerHTML += `<p class="user-question"><strong>Vous :</strong> ${userQuestion}</p>`;
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // Envoyer la question à l'API OpenAI
+            const response = await fetch("/api/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ prompt: userQuestion }),
+            });
+
+            const data = await response.json();
+
+            // Afficher la réponse de l'IA
+            chatBox.innerHTML += `<p class="bot-response"><strong>IA :</strong> ${data.response}</p>`;
+            chatBox.scrollTop = chatBox.scrollHeight;
+        });
+    </script>
+</body>
+</html>
