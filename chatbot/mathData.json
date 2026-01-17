@@ -1,0 +1,158 @@
+{
+  "_metadata": {
+    "title": "Chatbot Mathématiques Collège",
+    "author": "Laurent Billard",
+    "copyright": "© 2026 Tous droits réservés",
+    "version": "1.0.0",
+    "created": "2025-01-17",
+    "license": "Propriétaire - Usage non autorisé interdit",
+    "contact": "votre@email.com",
+    "fingerprint": "MTH-CHATBOT-FR-2025-v1",
+    "description": "Contenu pédagogique protégé par le droit d'auteur"
+  },
+  "themes": {
+    "fractions": {
+      "nom": "Fractions",
+      "keywords": ["fraction", "fractions", "numérateur", "dénominateur", "simplifier"],
+      "explanations": {
+        "addition": "Pour additionner des fractions :\n\n1️⃣ Trouve un dénominateur commun\n2️⃣ Convertis chaque fraction\n3️⃣ Additionne les numérateurs\n4️⃣ Simplifie si possible\n\n📌 Exemple : $$\\frac{1}{4} + \\frac{1}{3}$$\n\n• Dénominateur commun = 12\n• $$\\frac{1}{4} = \\frac{3}{12}$$ et $$\\frac{1}{3} = \\frac{4}{12}$$\n• $$\\frac{3}{12} + \\frac{4}{12} = \\frac{7}{12}$$",
+        "multiplication": "Pour multiplier des fractions :\n\n1️⃣ Multiplie les numérateurs entre eux\n2️⃣ Multiplie les dénominateurs entre eux\n3️⃣ Simplifie le résultat\n\n📌 Exemple : $$\\frac{2}{3} \\times \\frac{3}{4}$$\n\n$$\\frac{2 \\times 3}{3 \\times 4} = \\frac{6}{12} = \\frac{1}{2}$$",
+        "simplification": "Pour simplifier une fraction :\n\n1️⃣ Trouve le PGCD du numérateur et dénominateur\n2️⃣ Divise les deux par le PGCD\n\n📌 Exemple : $$\\frac{12}{18}$$\n\n• PGCD(12, 18) = 6\n• $$\\frac{12 \\div 6}{18 \\div 6} = \\frac{2}{3}$$"
+      },
+      "exercices": [
+        {
+          "question": "Calcule : $$\\frac{1}{4} + \\frac{1}{3}$$",
+          "reponse": "Solution :\n$$\\frac{1}{4} + \\frac{1}{3} = \\frac{3}{12} + \\frac{4}{12} = \\frac{7}{12}$$"
+        },
+        {
+          "question": "Simplifie : $$\\frac{12}{18}$$",
+          "reponse": "Solution :\nPGCD(12, 18) = 6\n$$\\frac{12}{18} = \\frac{2}{3}$$"
+        },
+        {
+          "question": "Calcule : $$\\frac{2}{3} \\times \\frac{3}{4}$$",
+          "reponse": "Solution :\n$$\\frac{2}{3} \\times \\frac{3}{4} = \\frac{6}{12} = \\frac{1}{2}$$"
+        },
+        {
+          "question": "Calcule : $$\\frac{3}{4} - \\frac{1}{3}$$",
+          "reponse": "Solution :\n$$\\frac{3}{4} - \\frac{1}{3} = \\frac{9}{12} - \\frac{4}{12} = \\frac{5}{12}$$"
+        }
+      ]
+    },
+    "equations": {
+      "nom": "Équations",
+      "keywords": ["équation", "equations", "résoudre", "inconnu", "x", "résous"],
+      "explanations": {
+        "simple": "Pour résoudre $$ax + b = c$$ :\n\n1️⃣ Isole les termes avec $x$ d'un côté\n2️⃣ Isole les nombres de l'autre côté\n3️⃣ Divise par le coefficient de $x$\n\n📌 Exemple : $$2x + 5 = 13$$\n\n$$2x = 13 - 5$$\n$$2x = 8$$\n$$x = \\frac{8}{2} = 4$$",
+        "verification": "⚠️ Toujours vérifier ta solution !\n\nRemplace $x$ par ta valeur dans l'équation d'origine.\n\n📌 Vérification pour $x = 4$ dans $$2x + 5 = 13$$ :\n\n$$2(4) + 5 = 8 + 5 = 13$$ ✓",
+        "avecParentheses": "Avec des parenthèses :\n\n1️⃣ Développe d'abord\n2️⃣ Puis résous normalement\n\n📌 Exemple : $$3(x + 2) = 15$$\n\n$$3x + 6 = 15$$\n$$3x = 15 - 6$$\n$$3x = 9$$\n$$x = 3$$"
+      },
+      "exercices": [
+        {
+          "question": "Résous : $$3x + 7 = 22$$",
+          "reponse": "Solution :\n$$3x = 22 - 7$$\n$$3x = 15$$\n$$x = \\frac{15}{3} = 5$$\n\nVérification : $$3(5) + 7 = 15 + 7 = 22$$ ✓"
+        },
+        {
+          "question": "Résous : $$5x - 8 = 12$$",
+          "reponse": "Solution :\n$$5x = 12 + 8$$\n$$5x = 20$$\n$$x = \\frac{20}{5} = 4$$"
+        },
+        {
+          "question": "Résous : $$2(x + 3) = 14$$",
+          "reponse": "Solution :\n$$2x + 6 = 14$$\n$$2x = 14 - 6$$\n$$2x = 8$$\n$$x = 4$$"
+        },
+        {
+          "question": "Résous : $$\\frac{x}{2} + 3 = 8$$",
+          "reponse": "Solution :\n$$\\frac{x}{2} = 8 - 3$$\n$$\\frac{x}{2} = 5$$\n$$x = 5 \\times 2 = 10$$"
+        }
+      ]
+    },
+    "pythagore": {
+      "nom": "Théorème de Pythagore",
+      "keywords": ["pythagore", "hypoténuse", "hypothenuse", "triangle rectangle"],
+      "explanations": {
+        "theoreme": "Dans un triangle rectangle :\n\n$$a^2 + b^2 = c^2$$\n\noù :\n• $a$ et $b$ sont les côtés de l'angle droit\n• $c$ est l'hypoténuse (le côté le plus long)\n\n📐 L'hypoténuse est opposée à l'angle droit",
+        "calculHypothenuse": "Pour calculer l'hypoténuse :\n\n1️⃣ Élève chaque côté au carré\n2️⃣ Additionne les résultats\n3️⃣ Prends la racine carrée\n\n📌 Exemple : côtés = 3 cm et 4 cm\n\n$$c^2 = 3^2 + 4^2$$\n$$c^2 = 9 + 16 = 25$$\n$$c = \\sqrt{25} = 5\\text{ cm}$$",
+        "calculCote": "Pour calculer un côté :\n\n$$a^2 = c^2 - b^2$$\n\n📌 Exemple : hypoténuse = 13 cm, un côté = 5 cm\n\n$$a^2 = 13^2 - 5^2$$\n$$a^2 = 169 - 25 = 144$$\n$$a = \\sqrt{144} = 12\\text{ cm}$$",
+        "reciproque": "Réciproque de Pythagore :\n\nSi $$c^2 = a^2 + b^2$$, alors le triangle est rectangle.\n\n📌 Exemple : côtés 5, 12, 13\n\n$$13^2 = 169$$\n$$5^2 + 12^2 = 25 + 144 = 169$$\n\nÉgalité vérifiée ✓ → Triangle rectangle !"
+      },
+      "exercices": [
+        {
+          "question": "Triangle rectangle : côtés = 3 cm et 4 cm. Calcule l'hypoténuse.",
+          "reponse": "Solution :\n$$c^2 = 3^2 + 4^2$$\n$$c^2 = 9 + 16 = 25$$\n$$c = \\sqrt{25} = 5\\text{ cm}$$"
+        },
+        {
+          "question": "Triangle rectangle : côtés = 6 cm et 8 cm. Calcule l'hypoténuse.",
+          "reponse": "Solution :\n$$c^2 = 6^2 + 8^2$$\n$$c^2 = 36 + 64 = 100$$\n$$c = \\sqrt{100} = 10\\text{ cm}$$"
+        },
+        {
+          "question": "Triangle rectangle : hypoténuse = 13 cm, un côté = 5 cm. Trouve l'autre côté.",
+          "reponse": "Solution :\n$$a^2 = 13^2 - 5^2$$\n$$a^2 = 169 - 25 = 144$$\n$$a = \\sqrt{144} = 12\\text{ cm}$$"
+        },
+        {
+          "question": "Un triangle a des côtés 5, 12 et 13. Est-il rectangle ?",
+          "reponse": "Solution :\nVérifions si $$13^2 = 5^2 + 12^2$$ :\n\n$$13^2 = 169$$\n$$5^2 + 12^2 = 25 + 144 = 169$$\n\n$$169 = 169$$ ✓\n\nOui, le triangle est rectangle !"
+        }
+      ]
+    },
+    "proportionnalite": {
+      "nom": "Proportionnalité",
+      "keywords": ["proportionnalité", "proportionnalite", "proportion", "produit en croix", "règle de trois", "quatrième proportionnelle"],
+      "explanations": {
+        "reconnaissance": "Reconnaître une situation de proportionnalité :\n\n• Les valeurs sont proportionnelles si le coefficient est constant\n• Vérifie : $$\\frac{y}{x} = \\text{constante}$$\n\n📌 Exemple : 2 kg coûtent 6€, 5 kg coûtent 15€\n\n• $$\\frac{6}{2} = 3$$ et $$\\frac{15}{5} = 3$$ ✓\n• Coefficient = 3 €/kg\n• C'est proportionnel !",
+        "produitCroix": "Produit en croix (règle de trois) :\n\nSi $$\\frac{a}{b} = \\frac{c}{x}$$ alors $$x = \\frac{b \\times c}{a}$$\n\n📌 Exemple : 3 kg → 12€, combien pour 5 kg ?\n\n$$\\frac{3}{12} = \\frac{5}{x}$$\n\n$$x = \\frac{12 \\times 5}{3} = \\frac{60}{3} = 20\\text{€}$$",
+        "vitesse": "Formules vitesse-distance-temps :\n\n$$v = \\frac{d}{t}$$ (vitesse = distance ÷ temps)\n\n$$d = v \\times t$$ (distance = vitesse × temps)\n\n$$t = \\frac{d}{v}$$ (temps = distance ÷ vitesse)\n\n📌 Exemple : 150 km en 2 heures\n$$v = \\frac{150}{2} = 75\\text{ km/h}$$"
+      },
+      "exercices": [
+        {
+          "question": "Si 3 kg coûtent 12€, combien coûtent 5 kg ?",
+          "reponse": "Solution :\n$$\\frac{3}{12} = \\frac{5}{x}$$\n\n$$x = \\frac{5 \\times 12}{3} = \\frac{60}{3} = 20\\text{€}$$"
+        },
+        {
+          "question": "Une voiture roule à 90 km/h. Quelle distance en 3 heures ?",
+          "reponse": "Solution :\n$$d = v \\times t$$\n$$d = 90 \\times 3 = 270\\text{ km}$$"
+        },
+        {
+          "question": "En 2 heures, j'ai parcouru 150 km. Quelle est ma vitesse ?",
+          "reponse": "Solution :\n$$v = \\frac{d}{t} = \\frac{150}{2} = 75\\text{ km/h}$$"
+        },
+        {
+          "question": "2 kg → 8€. Est-ce proportionnel à 5 kg → 20€ ?",
+          "reponse": "Solution :\n$$\\frac{8}{2} = 4$$ et $$\\frac{20}{5} = 4$$\n\nLe coefficient est constant (4€/kg)\n\nOui, c'est proportionnel ! ✓"
+        }
+      ]
+    },
+    "pourcentages": {
+      "nom": "Pourcentages",
+      "keywords": ["pourcentage", "pourcentages", "%", "pourcent", "remise", "réduction", "augmentation"],
+      "explanations": {
+        "calcul": "Calculer un pourcentage :\n\n$$\\text{Pourcentage} = \\frac{\\text{partie}}{\\text{total}} \\times 100$$\n\n📌 Exemple : 15 élèves sur 60\n\n$$\\frac{15}{60} \\times 100 = 0.25 \\times 100 = 25\\%$$",
+        "application": "Appliquer un pourcentage :\n\n$$\\text{Résultat} = \\text{valeur} \\times \\frac{\\text{pourcentage}}{100}$$\n\n📌 Exemple : 20% de 150€\n\n$$150 \\times \\frac{20}{100} = 150 \\times 0.20 = 30\\text{€}$$",
+        "augmentation": "Augmentation de $x$% :\n\n$$\\text{Nouvelle valeur} = \\text{valeur} \\times \\left(1 + \\frac{x}{100}\\right)$$\n\n📌 Prix 50€, augmentation +20% :\n\n$$50 \\times (1 + \\frac{20}{100}) = 50 \\times 1.20 = 60\\text{€}$$",
+        "reduction": "Réduction de $x$% :\n\n$$\\text{Nouvelle valeur} = \\text{valeur} \\times \\left(1 - \\frac{x}{100}\\right)$$\n\n📌 Prix 80€, réduction -25% :\n\n$$80 \\times (1 - \\frac{25}{100}) = 80 \\times 0.75 = 60\\text{€}$$",
+        "evolution": "Calculer un taux d'évolution :\n\n$$\\text{Taux} = \\frac{\\text{nouvelle valeur} - \\text{ancienne valeur}}{\\text{ancienne valeur}} \\times 100$$\n\n📌 Exemple : Prix passe de 50€ à 65€\n\n$$\\text{Taux} = \\frac{65 - 50}{50} \\times 100 = \\frac{15}{50} \\times 100 = 30\\%$$\n\nLe prix a augmenté de 30%"
+      },
+      "exercices": [
+        {
+          "question": "Calcule 25% de 80€",
+          "reponse": "Solution :\n$$80 \\times 0.25 = 20\\text{€}$$"
+        },
+        {
+          "question": "Un prix de 50€ augmente de 20%. Nouveau prix ?",
+          "reponse": "Solution :\n$$50 \\times 1.20 = 60\\text{€}$$\n\nOu : $$50 + (50 \\times 0.20) = 50 + 10 = 60\\text{€}$$"
+        },
+        {
+          "question": "15 est quel % de 60 ?",
+          "reponse": "Solution :\n$$\\frac{15}{60} \\times 100 = 25\\%$$"
+        },
+        {
+          "question": "Réduction de 30% sur un article à 120€. Prix final ?",
+          "reponse": "Solution :\n$$120 \\times 0.70 = 84\\text{€}$$\n\nOu : $$120 - (120 \\times 0.30) = 120 - 36 = 84\\text{€}$$"
+        },
+        {
+          "question": "Prix passe de 40€ à 50€. Quel taux d'augmentation ?",
+          "reponse": "Solution :\n$$\\frac{50 - 40}{40} \\times 100 = \\frac{10}{40} \\times 100 = 25\\%$$\n\nAugmentation de 25%"
+        }
+      ]
+    }
+  }
+}
+
