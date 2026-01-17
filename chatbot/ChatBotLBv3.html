@@ -10,7 +10,7 @@
 ║                                                                   ║
 ║ PROPRIÉTÉ INTELLECTUELLE PROTÉGÉE                                 ║
 ║ Utilisation non autorisée strictement interdite                   ║
-║ Contact: votre@email.com                                          ║
+║ Contact: lesmaths1200@gmail.com                                   ║
 ╚═══════════════════════════════════════════════════════════════════╝
 -->
 <head>
@@ -19,7 +19,7 @@
     <meta name="author" content="Laurent Billard">
     <meta name="copyright" content="© 2026 Laurent Billard">
     <meta name="description" content="Chatbot éducatif pour mathématiques niveau cycle d'orientation - Contenu protégé">
-    <title>Assistant Mathématiques cycle d'orientation</title>
+    <title>Votre assistant de mathématiques pour le cycle d'orientation</title>
 
 ```
 <!-- React -->
@@ -41,6 +41,9 @@
         padding: 0;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     }
+	.bg-black { background-color: #2b2b2b ! important; }
+	.border-gray-300 { border-color: #000000 ! important; }
+	.bg-gray-100 { background-color: #ffffff ! important; }
     .katex { font-size: 1.1em; }
     .katex-display { margin: 0.5em 0; }
 </style>
@@ -111,7 +114,7 @@
         const [messages, setMessages] = useState([
             {
                 type: 'bot',
-                text: "Bonjour ! Je suis ton assistant en mathématiques. Tape 'menu' pour voir les thèmes disponibles !"
+                text: "Bonjour ! Je suis ton assistant en mathématiques. Tape 'menu' pour voir les thèmes actuellement disponibles !"
             }
         ]);
         const [input, setInput] = useState('');
@@ -170,7 +173,7 @@
                     .join('\n');
                 return {
                     type: 'menu',
-                    response: `📚 Thèmes disponibles :\n\n${themesList}\n\n💡 Tape le nom d'un thème pour des explications\n📝 Tape 'exercice [thème]' pour t'entraîner`
+                    response: `📚 Thèmes actuellement disponibles :\n\n${themesList}\n\n💡 Tape le nom d'un thème pour des explications\n📝 Tape 'exercice [thème]' pour t'entraîner`
                 };
             }
 
@@ -232,21 +235,21 @@
             if (lowerMsg.match(/^(bonjour|salut|hello|coucou|hey|bonsoir)/)) {
                 return {
                     type: 'greeting',
-                    response: "Bonjour ! 😊 Comment puis-je t'aider en mathématiques ?\n\n💡 Tape 'menu' pour voir les thèmes !"
+                    response: "Bonjour ! 😊 Comment puis-je t'aider ?\n\n💡 Tape 'menu' pour voir les thèmes actuellement traités !"
                 };
             }
 
             if (lowerMsg.match(/merci|thanks/)) {
                 return {
                     type: 'thanks',
-                    response: "De rien ! Bon courage pour tes révisions ! 💪😊"
+                    response: "De rien ! Bon courage pour tes révisions et tes examens ! N'oublie pas de regarder mes vidéos sur ma chaîne YouTube @lesmaths1200 💪😊"
                 };
             }
 
             if (lowerMsg.match(/au revoir|bye|à bientôt/)) {
                 return {
                     type: 'goodbye',
-                    response: "À bientôt ! Continue à bien travailler ! 👋😊"
+                    response: "À bientôt ! Continue à bien travailler et regarde mes vidéos sur ma chaîne YouTube @lesmaths1200 ! 👋😊"
                 };
             }
 
@@ -393,7 +396,7 @@
                         </button>
                     </div>
                     <div className="text-center mt-3 text-xs text-gray-400">
-                        © 2026 Laurent Billard | Chatbot Mathématiques v1.0 | Tous droits réservés
+                        © 2026 LB | Chatbot Mathématiques v1.0 | Tous droits réservés
                     </div>
                 </div>
             </div>
