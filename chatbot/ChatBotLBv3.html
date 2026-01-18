@@ -3,7 +3,7 @@
 <html lang="fr">
 <!--
 ╔═══════════════════════════════════════════════════════════════════╗
-║ Chatbot Mathématiques cycle d'orientation                         ║
+║ Chatbot Mathématiques cycle d'orientation et collège              ║
 ║ © 2026 Laurent Billard - Tous droits réservés                     ║
 ║ Version: 1.0.0 | Date: 2026-01-17                                 ║
 ║ Fingerprint: MTH-CHATBOT-FR-2026-v1                               ║
@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Laurent Billard">
     <meta name="copyright" content="© 2026 Laurent Billard">
-    <meta name="description" content="Chatbot éducatif pour mathématiques niveau cycle d'orientation - Contenu protégé">
+    <meta name="description" content="Chatbot éducatif pour les mathématiques au niveau cycle d'orientation et collège- Contenu protégé">
     <title>Votre assistant de mathématiques pour le cycle d'orientation</title>
 
 ```
@@ -367,8 +367,8 @@
                 </div>
             );
         }
-
-        const quickButtons = mathData ? Object.entries(mathData.themes).slice(0, 4).map(([key, theme]) => ({
+//avant slice(0, 4)
+        const quickButtons = mathData ? Object.entries(mathData.themes).slice(0, 12).map(([key, theme]) => ({
             icon: <BookIcon size={16} />,
             text: theme.nom,
             action: `explique-moi ${theme.nom.toLowerCase()}`
@@ -439,7 +439,7 @@
                         </button>
                     </div>
                     <div className="text-center mt-3 text-xs text-gray-400">
-                        © 2026 LB | Chatbot Mathématiques v1.0 | Tous droits réservés
+                        © 2026 LB | Chatbot Mathématiques CO et collège v1.0 | Tous droits réservés
                     </div>
                 </div>
             </div>
