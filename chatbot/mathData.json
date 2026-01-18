@@ -12,7 +12,7 @@
   },
  "themes": {
     "fractions": {
-      "nom": "Fractions",
+      "nom": "Fractions1",
       "keywords": ["fraction", "fractions", "numérateur", "dénominateur", "simplifier"],
       "explanations": {
         "addition": "Pour additionner des fractions :\n\n1️⃣ Trouve un dénominateur commun\n2️⃣ Convertis chaque fraction\n3️⃣ Additionne les numérateurs\n4️⃣ Simplifie si possible\n\n📌 Exemple : $$\\frac{1}{4} + \\frac{1}{3}$$\n\n• Dénominateur commun = 12\n• $$\\frac{1}{4} = \\frac{3}{12}$$ et $$\\frac{1}{3} = \\frac{4}{12}$$\n• $$\\frac{3}{12} + \\frac{4}{12} = \\frac{7}{12}$$",
