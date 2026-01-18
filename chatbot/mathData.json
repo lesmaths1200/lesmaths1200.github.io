@@ -10,7 +10,7 @@
     "fingerprint": "MTH-CHATBOT-FR-2026-v1",
     "description": "Contenu pédagogique protégé par le droit d'auteur"
   },
-  "themes": {
+ "themes": {
     "fractions": {
       "nom": "Fractions",
       "keywords": ["fraction", "fractions", "numérateur", "dénominateur", "simplifier"],
@@ -120,6 +120,227 @@
         }
       ]
     },
+    "puissances": {
+      "nom": "Puissances",
+      "keywords": ["puissance", "puissances", "exposant", "carré", "cube", "puissance de 10"],
+      "explanations": {
+        "definition": "Une puissance est une multiplication répétée :\n\n$$a^n = a \\times a \\times a \\times ... \\times a$$ ($n$ fois)\n\n📌 Exemples :\n• $$2^3 = 2 \\times 2 \\times 2 = 8$$\n• $$5^2 = 5 \\times 5 = 25$$\n• $$10^4 = 10 \\times 10 \\times 10 \\times 10 = 10000$$",
+        "regles": "Règles de calcul :\n\n1️⃣ Multiplication : $$a^m \\times a^n = a^{m+n}$$\n\n2️⃣ Division : $$\\frac{a^m}{a^n} = a^{m-n}$$\n\n3️⃣ Puissance de puissance : $$(a^m)^n = a^{m \\times n}$$\n\n📌 Exemples :\n• $$2^3 \\times 2^2 = 2^{3+2} = 2^5 = 32$$\n• $$\\frac{5^7}{5^4} = 5^{7-4} = 5^3 = 125$$\n• $$(3^2)^3 = 3^{2 \\times 3} = 3^6 = 729$$",
+        "casParticuliers": "Cas particuliers :\n\n$$a^0 = 1$$ (pour tout $a \\neq 0$)\n\n$$a^1 = a$$\n\n$$a^{-n} = \\frac{1}{a^n}$$\n\n📌 Exemples :\n• $$7^0 = 1$$\n• $$(-5)^1 = -5$$\n• $$2^{-3} = \\frac{1}{2^3} = \\frac{1}{8}$$"
+      },
+      "exercices": [
+        {
+          "question": "Calcule : $$3^4$$",
+          "reponse": "Solution :\n$$3^4 = 3 \\times 3 \\times 3 \\times 3 = 81$$"
+        },
+        {
+          "question": "Simplifie : $$2^5 \\times 2^3$$",
+          "reponse": "Solution :\n$$2^5 \\times 2^3 = 2^{5+3} = 2^8 = 256$$"
+        },
+        {
+          "question": "Calcule : $$\\frac{10^6}{10^2}$$",
+          "reponse": "Solution :\n$$\\frac{10^6}{10^2} = 10^{6-2} = 10^4 = 10000$$"
+        },
+        {
+          "question": "Calcule : $$(5^2)^3$$",
+          "reponse": "Solution :\n$$(5^2)^3 = 5^{2 \\times 3} = 5^6 = 15625$$"
+        },
+        {
+          "question": "Calcule : $$4^0 + 3^{-2}$$",
+          "reponse": "Solution :\n$$4^0 = 1$$\n$$3^{-2} = \\frac{1}{3^2} = \\frac{1}{9}$$\n$$1 + \\frac{1}{9} = \\frac{9}{9} + \\frac{1}{9} = \\frac{10}{9}$$"
+        }
+      ]
+    },
+    "racinesCarrees": {
+      "nom": "Racines Carrées",
+      "keywords": ["racine carrée", "racine", "racines", "radical", "√"],
+      "explanations": {
+        "definition": "La racine carrée d'un nombre positif $a$ est le nombre positif dont le carré vaut $a$ :\n\n$$\\sqrt{a} \\times \\sqrt{a} = a$$\n\n📌 Exemples :\n• $$\\sqrt{25} = 5$$ car $$5^2 = 25$$\n• $$\\sqrt{9} = 3$$ car $$3^2 = 9$$\n• $$\\sqrt{100} = 10$$ car $$10^2 = 100$$",
+        "regles": "Règles de calcul :\n\n1️⃣ Produit : $$\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}$$\n\n2️⃣ Quotient : $$\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}$$\n\n3️⃣ Carré : $$(\\sqrt{a})^2 = a$$\n\n📌 Exemples :\n• $$\\sqrt{4} \\times \\sqrt{9} = \\sqrt{36} = 6$$\n• $$\\frac{\\sqrt{50}}{\\sqrt{2}} = \\sqrt{\\frac{50}{2}} = \\sqrt{25} = 5$$",
+        "simplification": "Simplifier une racine carrée :\n\n1️⃣ Cherche un carré parfait dans le nombre\n2️⃣ Factorise\n3️⃣ Simplifie\n\n📌 Exemple : $$\\sqrt{18}$$\n• $$18 = 9 \\times 2 = 3^2 \\times 2$$\n• $$\\sqrt{18} = \\sqrt{3^2 \\times 2} = 3\\sqrt{2}$$\n\n📌 Exemple : $$\\sqrt{75}$$\n• $$75 = 25 \\times 3 = 5^2 \\times 3$$\n• $$\\sqrt{75} = 5\\sqrt{3}$$"
+      },
+      "exercices": [
+        {
+          "question": "Calcule : $$\\sqrt{64}$$",
+          "reponse": "Solution :\n$$\\sqrt{64} = 8$$ car $$8^2 = 64$$"
+        },
+        {
+          "question": "Calcule : $$\\sqrt{16} \\times \\sqrt{4}$$",
+          "reponse": "Solution :\n$$\\sqrt{16} \\times \\sqrt{4} = 4 \\times 2 = 8$$\n\nOu : $$\\sqrt{16 \\times 4} = \\sqrt{64} = 8$$"
+        },
+        {
+          "question": "Simplifie : $$\\sqrt{50}$$",
+          "reponse": "Solution :\n$$50 = 25 \\times 2 = 5^2 \\times 2$$\n$$\\sqrt{50} = \\sqrt{5^2 \\times 2} = 5\\sqrt{2}$$"
+        },
+        {
+          "question": "Calcule : $$(\\sqrt{7})^2$$",
+          "reponse": "Solution :\n$$(\\sqrt{7})^2 = 7$$"
+        },
+        {
+          "question": "Simplifie : $$\\sqrt{72}$$",
+          "reponse": "Solution :\n$$72 = 36 \\times 2 = 6^2 \\times 2$$\n$$\\sqrt{72} = 6\\sqrt{2}$$"
+        }
+      ]
+    },
+    "calculLitteral": {
+      "nom": "Calcul Littéral",
+      "keywords": ["calcul littéral", "litteral", "développer", "factoriser", "réduire", "expression", "distributivité", "identités remarquables"],
+      "explanations": {
+        "developper": "Pour développer une expression :\n\nUtilise la distributivité : $$a(b + c) = ab + ac$$\n\n📌 Exemple simple : $$3(x + 5)$$\n$$3(x + 5) = 3x + 15$$\n\n📌 Double distributivité : $$(x + 2)(x + 3)$$\n$$(x + 2)(x + 3) = x^2 + 3x + 2x + 6 = x^2 + 5x + 6$$",
+        "reduire": "Pour réduire une expression :\n\n1️⃣ Regroupe les termes semblables\n2️⃣ Additionne/soustrais les coefficients\n\n📌 Exemple : $$3x + 5 + 2x - 3$$\n$$= 3x + 2x + 5 - 3$$\n$$= 5x + 2$$\n\n📌 Exemple : $$4x^2 + 2x - x^2 + 5x$$\n$$= 4x^2 - x^2 + 2x + 5x$$\n$$= 3x^2 + 7x$$",
+        "factoriser": "Pour factoriser :\n\n1️⃣ Trouve le facteur commun\n2️⃣ Mets-le en facteur\n\n📌 Exemple : $$6x + 9$$\n$$= 3(2x + 3)$$\n\n📌 Exemple : $$x^2 + 5x$$\n$$= x(x + 5)$$\n\n📌 Exemple : $$4x^2 + 8x$$\n$$= 4x(x + 2)$$",
+        "identitesRemarquables": "Identités remarquables :\n\n1️⃣ $$(a + b)^2 = a^2 + 2ab + b^2$$\n\n2️⃣ $$(a - b)^2 = a^2 - 2ab + b^2$$\n\n3️⃣ $$(a + b)(a - b) = a^2 - b^2$$\n\n📌 Exemple :\n$$(x + 3)^2 = x^2 + 2(x)(3) + 3^2 = x^2 + 6x + 9$$\n\n$$(x - 2)^2 = x^2 - 2(x)(2) + 2^2 = x^2 - 4x + 4$$\n\n$$(x + 5)(x - 5) = x^2 - 5^2 = x^2 - 25$$"
+      },
+      "exercices": [
+        {
+          "question": "Développe : $$5(x + 3)$$",
+          "reponse": "Solution :\n$$5(x + 3) = 5x + 15$$"
+        },
+        {
+          "question": "Réduis : $$4x + 7 + 3x - 2$$",
+          "reponse": "Solution :\n$$4x + 3x + 7 - 2 = 7x + 5$$"
+        },
+        {
+          "question": "Factorise : $$6x + 9$$",
+          "reponse": "Solution :\n$$6x + 9 = 3(2x + 3)$$"
+        },
+        {
+          "question": "Développe : $$(x + 2)(x + 5)$$",
+          "reponse": "Solution :\n$$(x + 2)(x + 5) = x^2 + 5x + 2x + 10 = x^2 + 7x + 10$$"
+        },
+        {
+          "question": "Développe avec identité remarquable : $$(x + 4)^2$$",
+          "reponse": "Solution :\n$$(x + 4)^2 = x^2 + 2(x)(4) + 4^2 = x^2 + 8x + 16$$"
+        },
+        {
+          "question": "Factorise : $$x^2 - 9$$",
+          "reponse": "Solution :\n$$x^2 - 9 = x^2 - 3^2 = (x + 3)(x - 3)$$"
+        }
+      ]
+    },
+    "notationScientifique": {
+      "nom": "Notation Scientifique",
+      "keywords": ["notation scientifique", "scientifique", "puissance de 10", "écriture scientifique", "ordre de grandeur"],
+      "explanations": {
+        "definition": "La notation scientifique s'écrit :\n\n$$a \\times 10^n$$\n\noù :\n• $$1 \\leq a < 10$$ (un seul chiffre avant la virgule)\n• $$n$$ est un entier relatif\n\n📌 Exemples :\n• $$3500 = 3.5 \\times 10^3$$\n• $$0.00042 = 4.2 \\times 10^{-4}$$\n• $$789000000 = 7.89 \\times 10^8$$",
+        "grandsNombres": "Pour les grands nombres ($$n > 0$$) :\n\n1️⃣ Déplace la virgule vers la gauche\n2️⃣ Compte le nombre de déplacements = exposant positif\n\n📌 Exemple : $$456000$$\n• Déplace 5 fois vers la gauche : $$4.56$$\n• $$456000 = 4.56 \\times 10^5$$",
+        "petitsNombres": "Pour les petits nombres ($$n < 0$$) :\n\n1️⃣ Déplace la virgule vers la droite\n2️⃣ Compte le nombre de déplacements = exposant négatif\n\n📌 Exemple : $$0.00035$$\n• Déplace 4 fois vers la droite : $$3.5$$\n• $$0.00035 = 3.5 \\times 10^{-4}$$",
+        "operations": "Opérations en notation scientifique :\n\n**Multiplication :**\n$$(a \\times 10^m) \\times (b \\times 10^n) = (a \\times b) \\times 10^{m+n}$$\n\n📌 Exemple :\n$$(2 \\times 10^3) \\times (3 \\times 10^5) = 6 \\times 10^8$$\n\n**Division :**\n$$\\frac{a \\times 10^m}{b \\times 10^n} = \\frac{a}{b} \\times 10^{m-n}$$\n\n📌 Exemple :\n$$\\frac{8 \\times 10^7}{2 \\times 10^3} = 4 \\times 10^4$$"
+      },
+      "exercices": [
+        {
+          "question": "Écris en notation scientifique : $$45000$$",
+          "reponse": "Solution :\n$$45000 = 4.5 \\times 10^4$$"
+        },
+        {
+          "question": "Écris en notation scientifique : $$0.00072$$",
+          "reponse": "Solution :\n$$0.00072 = 7.2 \\times 10^{-4}$$"
+        },
+        {
+          "question": "Calcule : $$(3 \\times 10^4) \\times (2 \\times 10^5)$$",
+          "reponse": "Solution :\n$$(3 \\times 10^4) \\times (2 \\times 10^5) = (3 \\times 2) \\times 10^{4+5}$$\n$$= 6 \\times 10^9$$"
+        },
+        {
+          "question": "Calcule : $$\\frac{9 \\times 10^8}{3 \\times 10^5}$$",
+          "reponse": "Solution :\n$$\\frac{9 \\times 10^8}{3 \\times 10^5} = \\frac{9}{3} \\times 10^{8-5}$$\n$$= 3 \\times 10^3$$"
+        },
+        {
+          "question": "Écris en écriture décimale : $$5.6 \\times 10^{-3}$$",
+          "reponse": "Solution :\n$$5.6 \\times 10^{-3} = 0.0056$$"
+        }
+      ]
+    },
+    "conversionsUnites": {
+      "nom": "Conversions d'Unités",
+      "keywords": ["conversion", "conversions", "unités", "unites", "longueur", "masse", "capacité", "aire", "volume", "durée", "km", "m", "cm", "kg", "g", "L", "heure"],
+      "explanations": {
+        "longueur": "Unités de longueur :\n\n$$\\text{km} \\rightarrow \\text{hm} \\rightarrow \\text{dam} \\rightarrow \\text{m} \\rightarrow \\text{dm} \\rightarrow \\text{cm} \\rightarrow \\text{mm}$$\n\nChaque flèche = × 10 ou ÷ 10\n\n📌 Exemples :\n• $$1 \\text{ km} = 1000 \\text{ m}$$\n• $$5.2 \\text{ m} = 520 \\text{ cm}$$\n• $$3500 \\text{ mm} = 3.5 \\text{ m}$$\n• $$0.045 \\text{ km} = 45 \\text{ m}$$",
+        "masse": "Unités de masse :\n\n$$\\text{t} \\rightarrow \\text{q} \\rightarrow \\text{kg} \\rightarrow \\text{hg} \\rightarrow \\text{dag} \\rightarrow \\text{g} \\rightarrow \\text{dg} \\rightarrow \\text{cg} \\rightarrow \\text{mg}$$\n\n📌 Exemples :\n• $$1 \\text{ t} = 1000 \\text{ kg}$$\n• $$2.5 \\text{ kg} = 2500 \\text{ g}$$\n• $$750 \\text{ g} = 0.75 \\text{ kg}$$\n• $$3 \\text{ t} = 3000 \\text{ kg}$$",
+        "capacite": "Unités de capacité :\n\n$$\\text{kL} \\rightarrow \\text{hL} \\rightarrow \\text{daL} \\rightarrow \\text{L} \\rightarrow \\text{dL} \\rightarrow \\text{cL} \\rightarrow \\text{mL}$$\n\n📌 Exemples :\n• $$1 \\text{ L} = 1000 \\text{ mL}$$\n• $$2.5 \\text{ L} = 250 \\text{ cL}$$\n• $$5000 \\text{ mL} = 5 \\text{ L}$$\n• $$0.75 \\text{ L} = 75 \\text{ cL}$$",
+        "aire": "Unités d'aire :\n\n$$\\text{km}^2 \\rightarrow \\text{hm}^2 \\rightarrow \\text{dam}^2 \\rightarrow \\text{m}^2 \\rightarrow \\text{dm}^2 \\rightarrow \\text{cm}^2 \\rightarrow \\text{mm}^2$$\n\n⚠️ Chaque flèche = × 100 ou ÷ 100\n\n📌 Exemples :\n• $$1 \\text{ m}^2 = 10000 \\text{ cm}^2$$\n• $$1 \\text{ km}^2 = 1000000 \\text{ m}^2$$\n• $$500 \\text{ cm}^2 = 0.05 \\text{ m}^2$$",
+        "volume": "Unités de volume :\n\n$$\\text{km}^3 \\rightarrow \\text{hm}^3 \\rightarrow \\text{dam}^3 \\rightarrow \\text{m}^3 \\rightarrow \\text{dm}^3 \\rightarrow \\text{cm}^3 \\rightarrow \\text{mm}^3$$\n\n⚠️ Chaque flèche = × 1000 ou ÷ 1000\n\n📌 Exemples :\n• $$1 \\text{ m}^3 = 1000 \\text{ dm}^3 = 1000 \\text{ L}$$\n• $$1 \\text{ dm}^3 = 1 \\text{ L}$$\n• $$5000 \\text{ cm}^3 = 5 \\text{ dm}^3 = 5 \\text{ L}$$",
+        "duree": "Unités de durée :\n\n• $$1 \\text{ h} = 60 \\text{ min}$$\n• $$1 \\text{ min} = 60 \\text{ s}$$\n• $$1 \\text{ h} = 3600 \\text{ s}$$\n\n📌 Exemples :\n• $$2.5 \\text{ h} = 2 \\text{ h } 30 \\text{ min} = 150 \\text{ min}$$\n• $$90 \\text{ min} = 1 \\text{ h } 30 \\text{ min} = 1.5 \\text{ h}$$\n• $$3600 \\text{ s} = 60 \\text{ min} = 1 \\text{ h}$$"
+      },
+      "exercices": [
+        {
+          "question": "Convertis : $$3.5 \\text{ km}$$ en mètres",
+          "reponse": "Solution :\n$$3.5 \\text{ km} = 3.5 \\times 1000 = 3500 \\text{ m}$$"
+        },
+        {
+          "question": "Convertis : $$2500 \\text{ g}$$ en kilogrammes",
+          "reponse": "Solution :\n$$2500 \\text{ g} = 2500 \\div 1000 = 2.5 \\text{ kg}$$"
+        },
+        {
+          "question": "Convertis : $$750 \\text{ mL}$$ en litres",
+          "reponse": "Solution :\n$$750 \\text{ mL} = 750 \\div 1000 = 0.75 \\text{ L}$$"
+        },
+        {
+          "question": "Convertis : $$5 \\text{ m}^2$$ en $$\\text{cm}^2$$",
+          "reponse": "Solution :\n$$5 \\text{ m}^2 = 5 \\times 10000 = 50000 \\text{ cm}^2$$"
+        },
+        {
+          "question": "Convertis : $$2 \\text{ m}^3$$ en litres",
+          "reponse": "Solution :\n$$2 \\text{ m}^3 = 2000 \\text{ dm}^3 = 2000 \\text{ L}$$"
+        },
+        {
+          "question": "Convertis : $$2 \\text{ h } 30 \\text{ min}$$ en minutes",
+          "reponse": "Solution :\n$$2 \\text{ h} = 2 \\times 60 = 120 \\text{ min}$$\n$$120 + 30 = 150 \\text{ min}$$"
+        }
+      ]
+    },
+    "perimetresAiresVolumes": {
+      "nom": "Périmètres, Aires et Volumes",
+      "keywords": ["périmètre", "perimetre", "aire", "aires", "volume", "volumes", "surface", "cercle", "disque", "carré", "rectangle", "trapèze", "triangle", "parallélogramme", "parallelogramme", "cylindre", "cube", "pyramide", "boule", "sphère", "sphere", "cône", "cone"],
+      "explanations": {
+        "figuresPlanes2D": "📐 FIGURES PLANES (2D) :\n\n**Carré** (côté $c$) :\n• Périmètre : $$P = 4c$$\n• Aire : $$A = c^2$$\n\n**Rectangle** (longueur $L$, largeur $l$) :\n• Périmètre : $$P = 2(L + l)$$\n• Aire : $$A = L \\times l$$\n\n**Triangle** (côtés $a, b, c$, base $b$, hauteur $h$) :\n• Périmètre : $$P = a + b + c$$\n• Aire : $$A = \\frac{b \\times h}{2}$$",
+        "cercleDisque": "⭕ CERCLE ET DISQUE :\n\n**Cercle** (rayon $r$, diamètre $d$) :\n• Périmètre (circonférence) : $$P = 2\\pi r = \\pi d$$\n\n**Disque** (rayon $r$) :\n• Aire : $$A = \\pi r^2$$\n\n📌 Exemples :\n• Rayon = 5 cm\n• Périmètre ≈ $$2 \\times 3.14 \\times 5 ≈ 31.4 \\text{ cm}$$\n• Aire ≈ $$3.14 \\times 5^2 ≈ 78.5 \\text{ cm}^2$$",
+        "autresFigures": "📐 AUTRES FIGURES PLANES :\n\n**Parallélogramme** (base $b$, hauteur $h$) :\n• Aire : $$A = b \\times h$$\n\n**Trapèze** (petite base $b$, grande base $B$, hauteur $h$) :\n• Aire : $$A = \\frac{(b + B) \\times h}{2}$$\n\n**Triangle rectangle** (côtés $a$ et $b$ de l'angle droit) :\n• Aire : $$A = \\frac{a \\times b}{2}$$",
+        "solides3D": "📦 SOLIDES (3D) :\n\n**Cube** (arête $a$) :\n• Volume : $$V = a^3$$\n• Aire totale : $$A = 6a^2$$\n\n**Pavé droit** (longueur $L$, largeur $l$, hauteur $h$) :\n• Volume : $$V = L \\times l \\times h$$\n\n**Cylindre** (rayon $r$, hauteur $h$) :\n• Volume : $$V = \\pi r^2 h$$\n• Aire latérale : $$A_L = 2\\pi r h$$",
+        "pyramidesCones": "🔺 PYRAMIDES ET CÔNES :\n\n**Pyramide** (aire de base $A_b$, hauteur $h$) :\n• Volume : $$V = \\frac{A_b \\times h}{3}$$\n\n**Cône** (rayon $r$, hauteur $h$) :\n• Volume : $$V = \\frac{\\pi r^2 h}{3}$$\n\n**Boule/Sphère** (rayon $r$) :\n• Volume : $$V = \\frac{4\\pi r^3}{3}$$\n• Aire : $$A = 4\\pi r^2$$"
+      },
+      "exercices": [
+        {
+          "question": "Carré de côté 6 cm. Calcule périmètre et aire.",
+          "reponse": "Solution :\n• Périmètre : $$P = 4 \\times 6 = 24 \\text{ cm}$$\n• Aire : $$A = 6^2 = 36 \\text{ cm}^2$$"
+        },
+        {
+          "question": "Rectangle : longueur 8 cm, largeur 5 cm. Calcule l'aire.",
+          "reponse": "Solution :\n$$A = 8 \\times 5 = 40 \\text{ cm}^2$$"
+        },
+        {
+          "question": "Triangle : base 10 cm, hauteur 6 cm. Calcule l'aire.",
+          "reponse": "Solution :\n$$A = \\frac{10 \\times 6}{2} = \\frac{60}{2} = 30 \\text{ cm}^2$$"
+        },
+        {
+          "question": "Cercle de rayon 4 cm. Calcule le périmètre. (π ≈ 3.14)",
+          "reponse": "Solution :\n$$P = 2\\pi r = 2 \\times 3.14 \\times 4 ≈ 25.12 \\text{ cm}$$"
+        },
+        {
+          "question": "Disque de rayon 5 cm. Calcule l'aire. (π ≈ 3.14)",
+          "reponse": "Solution :\n$$A = \\pi r^2 = 3.14 \\times 5^2 = 3.14 \\times 25 ≈ 78.5 \\text{ cm}^2$$"
+        },
+        {
+          "question": "Cube d'arête 4 cm. Calcule le volume.",
+          "reponse": "Solution :\n$$V = 4^3 = 64 \\text{ cm}^3$$"
+        },
+        {
+          "question": "Cylindre : rayon 3 cm, hauteur 10 cm. Calcule le volume. (π ≈ 3.14)",
+          "reponse": "Solution :\n$$V = \\pi r^2 h = 3.14 \\times 3^2 \\times 10$$\n$$= 3.14 \\times 9 \\times 10 ≈ 282.6 \\text{ cm}^3$$"
+        },
+        {
+          "question": "Cône : rayon 4 cm, hauteur 9 cm. Calcule le volume. (π ≈ 3.14)",
+          "reponse": "Solution :\n$$V = \\frac{\\pi r^2 h}{3} = \\frac{3.14 \\times 4^2 \\times 9}{3}$$\n$$= \\frac{3.14 \\times 16 \\times 9}{3} ≈ 150.72 \\text{ cm}^3$$"
+        },
+        {
+          "question": "Sphère de rayon 3 cm. Calcule le volume. (π ≈ 3.14)",
+          "reponse": "Solution :\n$$V = \\frac{4\\pi r^3}{3} = \\frac{4 \\times 3.14 \\times 3^3}{3}$$\n$$= \\frac{4 \\times 3.14 \\times 27}{3} ≈ 113.04 \\text{ cm}^3$$"
+        },
+        {
+          "question": "Trapèze : petite base 5 cm, grande base 9 cm, hauteur 4 cm. Calcule l'aire.",
+          "reponse": "Solution :\n$$A = \\frac{(b + B) \\times h}{2} = \\frac{(5 + 9) \\times 4}{2}$$\n$$= \\frac{14 \\times 4}{2} = \\frac{56}{2} = 28 \\text{ cm}^2$$"
+        }
+      ]
+    },
     "pourcentages": {
       "nom": "Pourcentages",
       "keywords": ["pourcentage", "pourcentages", "%", "pourcent", "remise", "réduction", "augmentation"],
@@ -155,4 +376,3 @@
     }
   }
 }
-
