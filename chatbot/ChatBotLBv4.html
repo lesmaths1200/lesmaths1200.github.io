@@ -176,12 +176,12 @@
             scrollToBottom();
         }, [messages]);
 
-        // Chargement des données depuis mathData.json
+        // Chargement des données depuis mathData2.json
         useEffect(() => {
             fetch('mathData2.json')
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error('Fichier mathData.json introuvable. Assurez-vous qu\'il est dans le même dossier que index.html');
+                        throw new Error('Fichier mathData2.json introuvable. Assurez-vous qu\'il est dans le même dossier que index.html');
                     }
                     return response.json();
                 })
@@ -337,7 +337,7 @@
                     <div className="text-center">
                         <CalculatorIcon size={48} />
                         <p className="mt-4 text-gray-800">Chargement des données...</p>
-                        <p className="mt-2 text-sm text-gray-500">Lecture de mathData.json</p>
+                        <p className="mt-2 text-sm text-gray-500">Lecture de mathData2.json</p>
                     </div>
                 </div>
             );
@@ -353,7 +353,7 @@
                         <div className="bg-gray-50 p-4 rounded text-sm border border-gray-200">
                             <p className="font-semibold mb-2">💡 Solutions :</p>
                             <ol className="list-decimal list-inside space-y-2">
-                                <li>Vérifiez que <code className="bg-gray-200 px-1 rounded">mathData.json</code> est dans le même dossier que <code className="bg-gray-200 px-1 rounded">index.html</code></li>
+                                <li>Vérifiez que <code className="bg-gray-200 px-1 rounded">mathData2.json</code> est dans le même dossier que <code className="bg-gray-200 px-1 rounded">index.html</code></li>
                                 <li>Utilisez un serveur local :
                                     <ul className="list-disc list-inside ml-6 mt-1 text-xs">
                                         <li><code className="bg-gray-200 px-1 rounded">python -m http.server 8000</code></li>
