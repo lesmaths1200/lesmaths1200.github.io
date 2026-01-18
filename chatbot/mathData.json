@@ -12,7 +12,7 @@
   },
  "themes": {
     "fractions": {
-      "nom": "Fractions1",
+      "nom": "Fractions",
       "keywords": ["fraction", "fractions", "numérateur", "dénominateur", "simplifier"],
       "explanations": {
         "addition": "Pour additionner des fractions :\n\n1️⃣ Trouve un dénominateur commun\n2️⃣ Convertis chaque fraction\n3️⃣ Additionne les numérateurs\n4️⃣ Simplifie si possible\n\n📌 Exemple : $$\\frac{1}{4} + \\frac{1}{3}$$\n\n• Dénominateur commun = 12\n• $$\\frac{1}{4} = \\frac{3}{12}$$ et $$\\frac{1}{3} = \\frac{4}{12}$$\n• $$\\frac{3}{12} + \\frac{4}{12} = \\frac{7}{12}$$",
@@ -122,7 +122,7 @@
     },
     "puissances": {
       "nom": "Puissances",
-      "keywords": ["puissance", "puissances", "exposant", "carré", "cube", "puissance de 10"],
+      "keywords": ["puissance", "puissances", "puiss", "exposant", "carré", "cube", "puissance de 10"],
       "explanations": {
         "definition": "Une puissance est une multiplication répétée :\n\n$$a^n = a \\times a \\times a \\times ... \\times a$$ ($n$ fois)\n\n📌 Exemples :\n• $$2^3 = 2 \\times 2 \\times 2 = 8$$\n• $$5^2 = 5 \\times 5 = 25$$\n• $$10^4 = 10 \\times 10 \\times 10 \\times 10 = 10000$$",
         "regles": "Règles de calcul :\n\n1️⃣ Multiplication : $$a^m \\times a^n = a^{m+n}$$\n\n2️⃣ Division : $$\\frac{a^m}{a^n} = a^{m-n}$$\n\n3️⃣ Puissance de puissance : $$(a^m)^n = a^{m \\times n}$$\n\n📌 Exemples :\n• $$2^3 \\times 2^2 = 2^{3+2} = 2^5 = 32$$\n• $$\\frac{5^7}{5^4} = 5^{7-4} = 5^3 = 125$$\n• $$(3^2)^3 = 3^{2 \\times 3} = 3^6 = 729$$",
@@ -153,7 +153,7 @@
     },
     "racinesCarrees": {
       "nom": "Racines Carrées",
-      "keywords": ["racine carrée", "racine", "racines", "radical", "√"],
+      "keywords": ["racine carrée", "racine", "rac", "racines", "radical", "√"],
       "explanations": {
         "definition": "La racine carrée d'un nombre positif $a$ est le nombre positif dont le carré vaut $a$ :\n\n$$\\sqrt{a} \\times \\sqrt{a} = a$$\n\n📌 Exemples :\n• $$\\sqrt{25} = 5$$ car $$5^2 = 25$$\n• $$\\sqrt{9} = 3$$ car $$3^2 = 9$$\n• $$\\sqrt{100} = 10$$ car $$10^2 = 100$$",
         "regles": "Règles de calcul :\n\n1️⃣ Produit : $$\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}$$\n\n2️⃣ Quotient : $$\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}$$\n\n3️⃣ Carré : $$(\\sqrt{a})^2 = a$$\n\n📌 Exemples :\n• $$\\sqrt{4} \\times \\sqrt{9} = \\sqrt{36} = 6$$\n• $$\\frac{\\sqrt{50}}{\\sqrt{2}} = \\sqrt{\\frac{50}{2}} = \\sqrt{25} = 5$$",
@@ -184,7 +184,7 @@
     },
     "calculLitteral": {
       "nom": "Calcul Littéral",
-      "keywords": ["calcul littéral", "litteral", "développer", "factoriser", "réduire", "expression", "distributivité", "identités remarquables"],
+      "keywords": ["calcul littéral", "litteral", "litt", "développer", "factoriser", "réduire", "expression", "distributivité", "identités remarquables"],
       "explanations": {
         "developper": "Pour développer une expression :\n\nUtilise la distributivité : $$a(b + c) = ab + ac$$\n\n📌 Exemple simple : $$3(x + 5)$$\n$$3(x + 5) = 3x + 15$$\n\n📌 Double distributivité : $$(x + 2)(x + 3)$$\n$$(x + 2)(x + 3) = x^2 + 3x + 2x + 6 = x^2 + 5x + 6$$",
         "reduire": "Pour réduire une expression :\n\n1️⃣ Regroupe les termes semblables\n2️⃣ Additionne/soustrais les coefficients\n\n📌 Exemple : $$3x + 5 + 2x - 3$$\n$$= 3x + 2x + 5 - 3$$\n$$= 5x + 2$$\n\n📌 Exemple : $$4x^2 + 2x - x^2 + 5x$$\n$$= 4x^2 - x^2 + 2x + 5x$$\n$$= 3x^2 + 7x$$",
@@ -252,7 +252,7 @@
     },
     "conversionsUnites": {
       "nom": "Conversions d'Unités",
-      "keywords": ["conversion", "conversions", "unités", "unites", "longueur", "masse", "capacité", "aire", "volume", "durée", "km", "m", "cm", "kg", "g", "L", "heure"],
+      "keywords": ["conversion", "conversions", "conv", "unités", "unites", "longueur", "masse", "capacité", "aire", "volume", "durée", "km", "m", "cm", "kg", "g", "L", "heure"],
       "explanations": {
         "longueur": "Unités de longueur :\n\n$$\\text{km} \\rightarrow \\text{hm} \\rightarrow \\text{dam} \\rightarrow \\text{m} \\rightarrow \\text{dm} \\rightarrow \\text{cm} \\rightarrow \\text{mm}$$\n\nChaque flèche = × 10 ou ÷ 10\n\n📌 Exemples :\n• $$1 \\text{ km} = 1000 \\text{ m}$$\n• $$5.2 \\text{ m} = 520 \\text{ cm}$$\n• $$3500 \\text{ mm} = 3.5 \\text{ m}$$\n• $$0.045 \\text{ km} = 45 \\text{ m}$$",
         "masse": "Unités de masse :\n\n$$\\text{t} \\rightarrow \\text{q} \\rightarrow \\text{kg} \\rightarrow \\text{hg} \\rightarrow \\text{dag} \\rightarrow \\text{g} \\rightarrow \\text{dg} \\rightarrow \\text{cg} \\rightarrow \\text{mg}$$\n\n📌 Exemples :\n• $$1 \\text{ t} = 1000 \\text{ kg}$$\n• $$2.5 \\text{ kg} = 2500 \\text{ g}$$\n• $$750 \\text{ g} = 0.75 \\text{ kg}$$\n• $$3 \\text{ t} = 3000 \\text{ kg}$$",
@@ -290,7 +290,7 @@
     },
     "perimetresAiresVolumes": {
       "nom": "Périmètres, Aires et Volumes",
-      "keywords": ["périmètre", "perimetre", "aire", "aires", "volume", "volumes", "surface", "cercle", "disque", "carré", "rectangle", "trapèze", "triangle", "parallélogramme", "parallelogramme", "cylindre", "cube", "pyramide", "boule", "sphère", "sphere", "cône", "cone"],
+      "keywords": ["périmètre", "perimetre", "aire", "aires", "vol", "volume", "volumes", "surface", "cercle", "disque", "carré", "rectangle", "trapèze", "triangle", "parallélogramme", "parallelogramme", "cylindre", "cube", "pyramide", "boule", "sphère", "sphere", "cône", "cone"],
       "explanations": {
         "figuresPlanes2D": "📐 FIGURES PLANES (2D) :\n\n**Carré** (côté $c$) :\n• Périmètre : $$P = 4c$$\n• Aire : $$A = c^2$$\n\n**Rectangle** (longueur $L$, largeur $l$) :\n• Périmètre : $$P = 2(L + l)$$\n• Aire : $$A = L \\times l$$\n\n**Triangle** (côtés $a, b, c$, base $b$, hauteur $h$) :\n• Périmètre : $$P = a + b + c$$\n• Aire : $$A = \\frac{b \\times h}{2}$$",
         "cercleDisque": "⭕ CERCLE ET DISQUE :\n\n**Cercle** (rayon $r$, diamètre $d$) :\n• Périmètre (circonférence) : $$P = 2\\pi r = \\pi d$$\n\n**Disque** (rayon $r$) :\n• Aire : $$A = \\pi r^2$$\n\n📌 Exemples :\n• Rayon = 5 cm\n• Périmètre ≈ $$2 \\times 3.14 \\times 5 ≈ 31.4 \\text{ cm}$$\n• Aire ≈ $$3.14 \\times 5^2 ≈ 78.5 \\text{ cm}^2$$",
