@@ -209,7 +209,7 @@
                     .join('\n');
                 return {
                     type: 'menu',
-                    response: `📚 Thèmes actuellement disponibles :\n\n${themesList}\n\n💡 Tape le nom d'un thème pour des explications\n📝 Tape 'exercice [thème]' pour t'entraîner`
+                    response: `📚 Thèmes actuellement disponibles :\n\n${themesList}\n\n💡 Tape 'cours [n° thème]' pour des explications\n📝 Tape 'exercice [n° thème]' pour t'entraîner`
                 };
             }
 
@@ -290,7 +290,7 @@
                     .join('\n');
                 return {
                     type: 'exercise',
-                    response: `📝 Sur quel thème veux-tu t'exercer ?\n\n${themesNoms}\n\n💡 Tape 'exercice [numéro]' ou 'exercice [nom du thème]'`
+                    response: `📝 Sur quel thème veux-tu t'exercer ?\n\n${themesNoms}\n\n💡 Tape 'exercice [n° thème]' ou 'exercice [nom du thème]'`
                 };
             }
 
@@ -322,7 +322,7 @@
                     // Ne plus afficher automatiquement le cours complet si juste le mot-clé
                     return {
                         type: 'info',
-                        response: `💡 Tu veux des infos sur **${themeData.nom}** ?\n\n• Tape 'cours ${themeData.nom.toLowerCase()}' pour le cours complet\n• Tape 'exercice ${themeData.nom.toLowerCase()}' pour t'entraîner`
+                        response: `💡 Tu veux des infos sur **${themeData.nom}** ?\n\n• Tape 'cours n°thème ${themeData.nom.toLowerCase()}' pour le cours complet\n• Tape 'exercice n°thème ${themeData.nom.toLowerCase()}' pour t'entraîner`
                     };
                 }
             }
