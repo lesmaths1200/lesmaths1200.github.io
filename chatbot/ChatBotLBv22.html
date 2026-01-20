@@ -22,25 +22,24 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html, body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 #root {
-    height: 100%;
+  height: 100vh;
 }
 
 .scroll-container {
-    overflow-y: auto;
-    scrollbar-width: none;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 .scroll-container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .katex { font-size: 1.1em; }
@@ -102,21 +101,15 @@ const [mathData, setMathData] = useState(null);
 const [loading, setLoading] = useState(true);
 
 const messagesEndRef = useRef(null);
-const inputRef = useRef(null);
 
 useEffect(() => {
 messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
 }, [messages]);
 
 useEffect(() => {
-inputRef.current?.focus();
-}, []);
-
-useEffect(() => {
 fetch('mathData2.json')
 .then(r => r.json())
-.then(data => { setMathData(data); setLoading(false); })
-.catch(() => setLoading(false));
+.then(data => { setMathData(data); setLoading(false); });
 }, []);
 
 const generateExercise = (key) => {
@@ -131,112 +124,61 @@ const lower = msg.toLowerCase();
 
 if (lower.includes('menu')) {
 const list = Object.values(mathData.themes)
-.map((t, i) => `${i + 1}. ${t.nom}`)
-.join('\n');
-return { response: `📚 Thèmes disponibles :\n\n${list}\n\n👉 Tape "cours 1" ou "exercice 1"` };
+.map((t, i) => `${i + 1}. ${t.nom}`).join('\n');
+return { response: `📚 Thèmes :\n\n${list}\n\nTape "cours 1" ou "exercice 1"` };
 }
 
-if (lower.includes('cours')) {
-const num = lower.match(/cours\s+(\d+)/);
-if (num) {
-const theme = Object.values(mathData.themes)[num[1] - 1];
-if (theme) {
-const exp = Object.values(theme.explanations).join('\n\n────────\n\n');
-return { response: `📖 ${theme.nom}\n\n${exp}` };
+if (lower.startsWith('cours')) {
+const n = lower.match(/cours\s+(\d+)/);
+if (n) {
+const t = Object.values(mathData.themes)[n[1]-1];
+if (t) {
+const exp = Object.values(t.explanations).join('\n\n────────\n\n');
+return { response: `📖 ${t.nom}\n\n${exp}` };
 }
 }
 }
 
-if (lower.includes('exercice')) {
-const num = lower.match(/exercice\s+(\d+)/);
-if (num) {
-const key = Object.keys(mathData.themes)[num[1] - 1];
-const theme = mathData.themes[key];
-if (theme) {
+if (lower.startsWith('exercice')) {
+const n = lower.match(/exercice\s+(\d+)/);
+if (n) {
+const key = Object.keys(mathData.themes)[n[1]-1];
+const t = mathData.themes[key];
 const ex = generateExercise(key);
 if (ex) {
 setLastExercise(ex);
-return { response: `✏️ Exercice (${theme.nom})\n\n${ex.q}\n\n💡 Tape "solution"` };
-}
+return { response: `✏️ Exercice (${t.nom})\n\n${ex.q}\n\nTape "solution"` };
 }
 }
 }
 
 if (lower.includes('solution')) {
 if (lastExercise) return { response: `✅ ${lastExercise.a}` };
-return { response: "Demande d'abord un exercice 😉" };
 }
 
-return { response: "❓ Je n'ai pas compris.\nTape **menu** pour commencer." };
+return { response: "❓ Tape **menu** pour commencer." };
 };
 
 const handleSend = () => {
 if (!input.trim()) return;
 setMessages(m => [...m, { type: 'user', text: input }]);
 const res = analyzeMessage(input);
-setTimeout(() => {
 setMessages(m => [...m, { type: 'bot', text: res.response }]);
-}, 300);
 setInput('');
 };
 
-if (loading) {
-return <div className="flex items-center justify-center h-full">Chargement…</div>;
-}
-
-/* Boutons */
-const coursButtons = Object.values(mathData.themes).map((t, i) => ({
-text: t.nom,
-action: `cours ${i + 1}`
-}));
-const exButtons = Object.values(mathData.themes).map((t, i) => ({
-text: t.nom,
-action: `exercice ${i + 1}`
-}));
+if (loading) return <div className="h-full flex items-center justify-center">Chargement…</div>;
 
 return (
-<div style={{ height: '100dvh', display: 'flex', flexDirection: 'column' }}>
+<div className="h-full flex flex-col">
 
-<div className="scroll-container bg-gray-50" style={{ flex: 1, paddingBottom: '110px' }}>
+<div className="scroll-container flex-1 bg-gray-50">
 <div className="p-4 max-w-4xl mx-auto">
 
-<div className="bg-black text-white p-4 rounded-lg mb-4 shadow">
+<div className="bg-black text-white p-4 rounded-lg mb-4">
 <h1 className="text-xl font-bold flex items-center gap-2">
 <CalculatorIcon size={24}/> Maths Collège
 </h1>
-</div>
-
-<div className="bg-white p-3 rounded-lg shadow mb-4">
-<div className="flex justify-center gap-2 mb-3">
-<button onClick={() => setInput('menu')}
-className="px-3 py-1 bg-purple-600 text-white rounded-full text-xs">📋 Menu</button>
-
-<button onClick={() => window.open('https://www.youtube.com/@lesmaths1200', '_blank')}
-className="px-3 py-1 bg-red-600 text-white rounded-full text-xs flex items-center gap-1">
-<YoutubeIcon size={12}/> YouTube
-</button>
-</div>
-
-<p className="text-xs text-center text-gray-500 font-semibold mb-1">📚 COURS</p>
-<div className="flex flex-wrap justify-center gap-1 mb-3">
-{coursButtons.map((b,i)=>(
-<button key={i} onClick={()=>setInput(b.action)}
-className="px-2 py-1 bg-blue-100 rounded-full text-xs">{b.text}</button>
-))}
-</div>
-
-<p className="text-xs text-center text-gray-500 font-semibold mb-1">✏️ EXERCICES</p>
-<div className="flex flex-wrap justify-center gap-1 mb-3">
-{exButtons.map((b,i)=>(
-<button key={i} onClick={()=>setInput(b.action)}
-className="px-2 py-1 bg-green-100 rounded-full text-xs">{b.text}</button>
-))}
-</div>
-
-<button onClick={()=>setInput('solution')}
-className="mx-auto block px-3 py-1 bg-yellow-400 rounded-full text-xs font-semibold">
-💡 Solution
-</button>
 </div>
 
 {messages.map((m,i)=>(
@@ -250,9 +192,9 @@ className="mx-auto block px-3 py-1 bg-yellow-400 rounded-full text-xs font-semib
 </div>
 </div>
 
-<div className="bg-white border-t fixed bottom-0 left-0 w-full z-50 shadow-lg">
-<div className="max-w-4xl mx-auto p-3 flex gap-2">
-<input ref={inputRef} value={input}
+<div className="bg-white border-t p-3">
+<div className="max-w-4xl mx-auto flex gap-2">
+<input value={input}
 onChange={e=>setInput(e.target.value)}
 onKeyDown={e=>e.key==='Enter' && handleSend()}
 placeholder="Pose ta question…"
