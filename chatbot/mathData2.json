@@ -340,7 +340,7 @@
         {
           "question": "2 kg → 8€. Est-ce proportionnel à 5 kg → 20€ ?",
           "reponse": "Solution :\n$$\\frac{8}{2} = 4$$ et $$\\frac{20}{5} = 4$$\n\nLe coefficient est constant (4€/kg)\n\nOui, c'est proportionnel ! ✓"
-        }
+        },
 		{
 		  "question": "Une voiture parcourt 180 km en 3 heures. Quelle distance parcourra-t-elle en 5 heures à la même vitesse ?",
 		  "reponse": "Solution :\nVitesse = 180 ÷ 3 = 60 km/h\nDistance en 5 h = 60 × 5 = 300 km"
