@@ -18,7 +18,7 @@
         "addition": "Pour additionner des fractions :\n\n1️⃣ Trouve un dénominateur commun\n2️⃣ Convertis chaque fraction\n3️⃣ Additionne les numérateurs\n4️⃣ Simplifie si possible\n\n📌 Exemple : $$\\frac{1}{4} + \\frac{1}{3}$$\n\n• Dénominateur commun = 12\n• $$\\frac{1}{4} = \\frac{3}{12}$$ et $$\\frac{1}{3} = \\frac{4}{12}$$\n• $$\\frac{3}{12} + \\frac{4}{12} = \\frac{7}{12}$$",
 		"soustraction": "Pour soustraire des fractions :\n\n1️⃣ Trouve un dénominateur commun\n2️⃣ Convertis chaque fraction\n3️⃣ Soustraire les numérateurs\n4️⃣ Simplifie si possible\n\n📌 Exemple : $$\\frac{1}{4} - \\frac{1}{3}$$\n\n• Dénominateur commun = 12\n• $$\\frac{1}{4} = \\frac{3}{12}$$ et $$\\frac{1}{3} = \\frac{4}{12}$$\n• $$\\frac{3}{12} - \\frac{4}{12} = \\frac{-1}{12}$$",
         "multiplication": "Pour multiplier des fractions :\n\n1️⃣ Multiplie les numérateurs entre eux\n2️⃣ Multiplie les dénominateurs entre eux\n3️⃣ Simplifie le résultat\n\n📌 Exemple : $$\\frac{2}{3} \\times \\frac{3}{4}$$\n\n$$\\frac{2 \\times 3}{3 \\times 4} = \\frac{6}{12} = \\frac{1}{2}$$",
-        "division": "Pour diviser des fractions :\n\n1️⃣ Multiplie les numérateurs entre eux\n2️⃣ Multiplie les dénominateurs entre eux\n3️⃣ Simplifie le résultat\n\n📌 Exemple : $$\\frac{2}{3} \\times \\frac{3}{4}$$\n\n$$\\frac{2 \\times 3}{3 \\times 4} = \\frac{6}{12} = \\frac{1}{2}$$",
+		"division": "Pour diviser des fractions :\n\n1️⃣ Garde la première fraction\n2️⃣ Inverse la deuxième fraction\n3️⃣ Multiplie les deux fractions\n4️⃣ Simplifie le résultat\n\n📌 Exemple : $$\\frac{2}{3} \\div \\frac{3}{4}$$\n\n• On inverse la deuxième fraction : $$\\frac{3}{4} \\rightarrow \\frac{4}{3}$$\n• $$\\frac{2}{3} \\times \\frac{4}{3} = \\frac{8}{9}$$",
 		"simplification": "Pour simplifier une fraction :\n\n1️⃣ Trouve le PGCD du numérateur et dénominateur\n2️⃣ Divise les deux par le PGCD\n\n📌 Exemple : $$\\frac{12}{18}$$\n\n• PGCD(12, 18) = 6\n• $$\\frac{12 \\div 6}{18 \\div 6} = \\frac{2}{3}$$"
       },
       "exercices": [
@@ -38,6 +38,47 @@
           "question": "Calcule : $$\\frac{3}{4} - \\frac{1}{3}$$",
           "reponse": "Solution :\n$$\\frac{3}{4} - \\frac{1}{3} = \\frac{9}{12} - \\frac{4}{12} = \\frac{5}{12}$$"
         }
+		{
+		  "question": "Calcule : $$\\frac{5}{6} \\div \\frac{2}{3}$$",
+		  "reponse": "Solution :\nOn inverse la deuxième fraction : $$\\frac{2}{3} \\rightarrow \\frac{3}{2}$$\n$$\\frac{5}{6} \\times \\frac{3}{2} = \\frac{15}{12} = \\frac{5}{4}$$"
+		},
+		{
+		  "question": "Calcule : $$\\frac{7}{8} \\div \\frac{1}{4}$$",
+		  "reponse": "Solution :\n$$\\frac{7}{8} \\times \\frac{4}{1} = \\frac{28}{8} = \\frac{7}{2}$$"
+		},
+		{
+		  "question": "Calcule : $$\\frac{3}{5} + \\frac{2}{3} \\times \\frac{9}{4}$$",
+		  "reponse": "Solution :\nPriorité à la multiplication :\n$$\\frac{2}{3} \\times \\frac{9}{4} = \\frac{18}{12} = \\frac{3}{2}$$\n$$\\frac{3}{5} + \\frac{3}{2} = \\frac{6}{10} + \\frac{15}{10} = \\frac{21}{10}$$"
+		},
+		{
+		  "question": "Calcule : $$\\left(\\frac{4}{5} - \\frac{1}{10}\\right) \\div \\frac{3}{5}$$",
+		  "reponse": "Solution :\n$$\\frac{4}{5} = \\frac{8}{10}$$\n$$\\frac{8}{10} - \\frac{1}{10} = \\frac{7}{10}$$\n$$\\frac{7}{10} \\div \\frac{3}{5} = \\frac{7}{10} \\times \\frac{5}{3} = \\frac{35}{30} = \\frac{7}{6}$$"
+		},
+		{
+		  "question": "Simplifie : $$\\frac{18}{24}$$",
+		  "reponse": "Solution :\nPGCD(18,24)=6\n$$\\frac{18}{24} = \\frac{3}{4}$$"
+		},
+		{
+		  "question": "Calcule : $$\\frac{5}{9} - \\frac{1}{3}$$",
+		  "reponse": "Solution :\n$$\\frac{1}{3} = \\frac{3}{9}$$\n$$\\frac{5}{9} - \\frac{3}{9} = \\frac{2}{9}$$"
+		},
+		{
+		  "question": "Calcule : $$\\frac{6}{7} \\times \\frac{14}{3}$$",
+		  "reponse": "Solution :\nSimplification croisée :\n$$\\frac{6}{7} \\times \\frac{14}{3} = \\frac{2}{1} \\times 2 = 4$$"
+		},
+		{
+		  "question": "Calcule : $$\\frac{1}{2} + \\frac{3}{4} \\div \\frac{3}{2}$$",
+		  "reponse": "Solution :\n$$\\frac{3}{4} \\div \\frac{3}{2} = \\frac{3}{4} \\times \\frac{2}{3} = \\frac{1}{2}$$\n$$\\frac{1}{2} + \\frac{1}{2} = 1$$"
+		},
+		{
+		  "question": "Calcule : $$\\left(\\frac{2}{3} + \\frac{5}{6}\\right) \\times \\frac{3}{7}$$",
+		  "reponse": "Solution :\n$$\\frac{2}{3} = \\frac{4}{6}$$\n$$\\frac{4}{6} + \\frac{5}{6} = \\frac{9}{6} = \\frac{3}{2}$$\n$$\\frac{3}{2} \\times \\frac{3}{7} = \\frac{9}{14}$$"
+		},
+		{
+		  "question": "Calcule : $$\\frac{10}{3} \\div \\frac{5}{6}$$",
+		  "reponse": "Solution :\n$$\\frac{10}{3} \\times \\frac{6}{5} = \\frac{60}{15} = 4$$"
+		}
+
       ]
     },
     "equations": {
@@ -65,6 +106,87 @@
           "question": "Résous : $$\\frac{x}{2} + 3 = 8$$",
           "reponse": "Solution :\n$$\\frac{x}{2} = 8 - 3$$\n$$\\frac{x}{2} = 5$$\n$$x = 5 \\times 2 = 10$$"
         }
+		{
+		  "question": "Résous l’équation : $$x + 7 = 15$$",
+		  "reponse": "Solution :\nOn soustrait 7 aux deux membres :\n$$x = 15 - 7 = 8$$"
+		},
+		{
+		  "question": "Résous l’équation : $$x - 5 = 12$$",
+		  "reponse": "Solution :\nOn ajoute 5 aux deux membres :\n$$x = 12 + 5 = 17$$"
+		},
+		{
+		  "question": "Résous l’équation : $$4x = 20$$",
+		  "reponse": "Solution :\nOn divise les deux membres par 4 :\n$$x = 5$$"
+		},
+		{
+		  "question": "Résous l’équation : $$\\frac{x}{3} = 7$$",
+		  "reponse": "Solution :\nOn multiplie les deux membres par 3 :\n$$x = 21$$"
+		},
+		{
+		  "question": "Résous l’équation : $$2x + 5 = 17$$",
+		  "reponse": "Solution :\nOn soustrait 5 aux deux membres :\n$$2x = 12$$\nOn divise par 2 :\n$$x = 6$$"
+		},
+		{
+		  "question": "Résous l’équation : $$3x - 4 = 11$$",
+		  "reponse": "Solution :\nOn ajoute 4 aux deux membres :\n$$3x = 15$$\n$$x = 5$$"
+		},
+		{
+		  "question": "Résous l’équation : $$5x = 2x + 9$$",
+		  "reponse": "Solution :\nOn soustrait $2x$ aux deux membres :\n$$3x = 9$$\n$$x = 3$$"
+		},
+		{
+		  "question": "Résous l’équation : $$4(x - 2) = 12$$",
+		  "reponse": "Solution :\nOn développe :\n$$4x - 8 = 12$$\nOn ajoute 8 aux deux membres :\n$$4x = 20$$\n$$x = 5$$"
+		},
+		{
+		  "question": "Résous l’équation : $$2(x + 3) = x + 11$$",
+		  "reponse": "Solution :\nOn développe :\n$$2x + 6 = x + 11$$\nOn soustrait $x$ :\n$$x + 6 = 11$$\n$$x = 5$$"
+		},
+		{
+		  "question": "Résous l’équation : $$\\frac{x - 4}{2} = 6$$",
+		  "reponse": "Solution :\nOn multiplie par 2 :\n$$x - 4 = 12$$\nOn ajoute 4 :\n$$x = 16$$"
+		}
+		{
+			"question": "Résoudre : \\( x+7=15 \\)",
+			"solution": "\\( x=15-7=8 \\)."
+		  },
+		  {
+			"question": "Résoudre : \\( 3x=21 \\)",
+			"solution": "\\( x=7 \\)."
+		  },
+		  {
+			"question": "Résoudre : \\( 5x-10=0 \\)",
+			"solution": "\\( 5x=10 \\Rightarrow x=2 \\)."
+		  },
+		  {
+			"question": "Résoudre : \\( 2x+4=18 \\)",
+			"solution": "\\( 2x=14 \\Rightarrow x=7 \\)."
+		  },
+		  {
+			"question": "Résoudre : \\( 4x-6=10 \\)",
+			"solution": "\\( 4x=16 \\Rightarrow x=4 \\)."
+		  },
+		  {
+			"question": "Résoudre : \\( 9-2x=1 \\)",
+			"solution": "\\( -2x=-8 \\Rightarrow x=4 \\)."
+		  },
+		  {
+			"question": "Résoudre : \\( 6x=3 \\)",
+			"solution": "\\( x=\\frac{1}{2} \\)."
+		  },
+		  {
+			"question": "Résoudre : \\( x-\\frac{3}{4}=\\frac{1}{4} \\)",
+			"solution": "\\( x=1 \\)."
+		  },
+		  {
+			"question": "Résoudre : \\( \\frac{x}{5}=3 \\)",
+			"solution": "\\( x=15 \\)."
+		  },
+		  {
+			"question": "Résoudre : \\( 2(x+3)=14 \\)",
+			"solution": "\\( x+3=7 \\Rightarrow x=4 \\)."
+		  }
+
       ]
     },
     "pythagore": {
@@ -93,6 +215,46 @@
           "question": "Un triangle a des côtés 5, 12 et 13. Est-il rectangle ?",
           "reponse": "Solution :\nVérifions si $$13^2 = 5^2 + 12^2$$ :\n\n$$13^2 = 169$$\n$$5^2 + 12^2 = 25 + 144 = 169$$\n\n$$169 = 169$$ ✓\n\nOui, le triangle est rectangle !"
         }
+		{
+		  "question": "Dans un triangle rectangle, les côtés de l’angle droit mesurent 3 cm et 4 cm. Calcule l’hypoténuse.",
+		  "reponse": "Solution :\n$$c^2 = a^2 + b^2 = 3^2 + 4^2 = 9 + 16 = 25$$\n$$c = \\sqrt{25} = 5$$ cm"
+		},
+		{
+		  "question": "Dans un triangle rectangle, l’hypoténuse mesure 13 cm et un côté de l’angle droit 5 cm. Trouve l’autre côté.",
+		  "reponse": "Solution :\n$$c^2 = a^2 + b^2 \\Rightarrow 13^2 = 5^2 + b^2$$\n$$169 = 25 + b^2$$\n$$b^2 = 144$$\n$$b = 12$$ cm"
+		},
+		{
+		  "question": "Un triangle rectangle a pour côtés de l’angle droit 7 cm et 24 cm. Calcule l’hypoténuse.",
+		  "reponse": "Solution :\n$$c^2 = 7^2 + 24^2 = 49 + 576 = 625$$\n$$c = \\sqrt{625} = 25$$ cm"
+		},
+		{
+		  "question": "Dans un triangle rectangle, l’hypoténuse mesure 10 cm et un côté 6 cm. Calcule le second côté.",
+		  "reponse": "Solution :\n$$10^2 = 6^2 + b^2$$\n$$100 = 36 + b^2$$\n$$b^2 = 64$$\n$$b = 8$$ cm"
+		},
+		{
+		  "question": "Calcule l’hypoténuse d’un triangle rectangle dont les côtés sont 8 cm et 15 cm.",
+		  "reponse": "Solution :\n$$c^2 = 8^2 + 15^2 = 64 + 225 = 289$$\n$$c = \\sqrt{289} = 17$$ cm"
+		},
+		{
+		  "question": "Un triangle rectangle a pour hypoténuse 17 cm et un côté 8 cm. Trouve le second côté.",
+		  "reponse": "Solution :\n$$17^2 = 8^2 + b^2$$\n$$289 = 64 + b^2$$\n$$b^2 = 225$$\n$$b = 15$$ cm"
+		},
+		{
+		  "question": "Dans un triangle rectangle, les côtés de l’angle droit mesurent 9 cm et 12 cm. Calcule l’hypoténuse.",
+		  "reponse": "Solution :\n$$c^2 = 9^2 + 12^2 = 81 + 144 = 225$$\n$$c = 15$$ cm"
+		},
+		{
+		  "question": "Un triangle rectangle a pour côtés 5 cm et 12 cm. Calcule l’hypoténuse.",
+		  "reponse": "Solution :\n$$c^2 = 5^2 + 12^2 = 25 + 144 = 169$$\n$$c = 13$$ cm"
+		},
+		{
+		  "question": "L’hypoténuse d’un triangle rectangle mesure 20 cm et un côté 16 cm. Trouve le second côté.",
+		  "reponse": "Solution :\n$$20^2 = 16^2 + b^2$$\n$$400 = 256 + b^2$$\n$$b^2 = 144$$\n$$b = 12$$ cm"
+		},
+		{
+		  "question": "Dans un triangle rectangle, les côtés de l’angle droit mesurent 6 cm et 8 cm. Calcule l’hypoténuse.",
+		  "reponse": "Solution :\n$$c^2 = 6^2 + 8^2 = 36 + 64 = 100$$\n$$c = 10$$ cm"
+		}
       ]
     },
     "proportionnalite": {
@@ -120,6 +282,46 @@
           "question": "2 kg → 8€. Est-ce proportionnel à 5 kg → 20€ ?",
           "reponse": "Solution :\n$$\\frac{8}{2} = 4$$ et $$\\frac{20}{5} = 4$$\n\nLe coefficient est constant (4€/kg)\n\nOui, c'est proportionnel ! ✓"
         }
+		{
+		  "question": "Une voiture parcourt 180 km en 3 heures. Quelle distance parcourra-t-elle en 5 heures à la même vitesse ?",
+		  "reponse": "Solution :\nVitesse = 180 ÷ 3 = 60 km/h\nDistance en 5 h = 60 × 5 = 300 km"
+		},
+		{
+		  "question": "Si 4 kg de pommes coûtent 12 CHF, combien coûtent 7 kg de pommes ?",
+		  "reponse": "Solution :\nPrix par kg = 12 ÷ 4 = 3 CHF/kg\nPrix pour 7 kg = 7 × 3 = 21 CHF"
+		},
+		{
+		  "question": "Une recette pour 6 personnes utilise 300 g de farine. Combien de farine pour 10 personnes ?",
+		  "reponse": "Solution :\nFarine par personne = 300 ÷ 6 = 50 g\nPour 10 personnes = 10 × 50 = 500 g"
+		},
+		{
+		  "question": "Un train parcourt 240 km en 4 heures. Quelle distance parcourra-t-il en 7 heures à la même vitesse ?",
+		  "reponse": "Solution :\nVitesse = 240 ÷ 4 = 60 km/h\nDistance en 7 h = 60 × 7 = 420 km"
+		},
+		{
+		  "question": "Si 5 litres de peinture couvrent 40 m², combien de litres pour 100 m² ?",
+		  "reponse": "Solution :\nCouverture par litre = 40 ÷ 5 = 8 m²/litre\nPour 100 m² = 100 ÷ 8 = 12,5 litres"
+		},
+		{
+		  "question": "Une imprimante imprime 180 pages en 15 minutes. Combien de pages en 1 heure ?",
+		  "reponse": "Solution :\nPages par minute = 180 ÷ 15 = 12 pages/min\nEn 60 min = 12 × 60 = 720 pages"
+		},
+		{
+		  "question": "Si 3 stylos coûtent 9 CHF, combien coûtent 8 stylos ?",
+		  "reponse": "Solution :\nPrix par stylo = 9 ÷ 3 = 3 CHF\nPrix pour 8 stylos = 8 × 3 = 24 CHF"
+		},
+		{
+		  "question": "Une bicyclette parcourt 18 km en 45 minutes. Quelle distance en 1h30 à la même vitesse ?",
+		  "reponse": "Solution :\nVitesse = 18 ÷ 0,75 h = 24 km/h\nDistance en 1,5 h = 24 × 1,5 = 36 km"
+		},
+		{
+		  "question": "Si 7 kg de sucre coûtent 21 CHF, combien coûtent 10 kg ?",
+		  "reponse": "Solution :\nPrix par kg = 21 ÷ 7 = 3 CHF\nPrix pour 10 kg = 10 × 3 = 30 CHF"
+		},
+		{
+		  "question": "Une machine fabrique 120 objets en 8 heures. Combien d’objets en 5 heures ?",
+		  "reponse": "Solution :\nProduction par heure = 120 ÷ 8 = 15 objets/h\nEn 5 h = 15 × 5 = 75 objets"
+		}
       ]
     },
     "puissances": {
@@ -182,6 +384,46 @@
           "question": "Simplifie : $$\\sqrt{72}$$",
           "reponse": "Solution :\n$$72 = 36 \\times 2 = 6^2 \\times 2$$\n$$\\sqrt{72} = 6\\sqrt{2}$$"
         }
+		{
+			"question": "Calculer : \\( \\sqrt{81} \\)",
+			"solution": "\\( 9 \\)."
+		  },
+		  {
+			"question": "Simplifier : \\( \\sqrt{50} \\)",
+			"solution": "\\( \\sqrt{25\\times2}=5\\sqrt{2} \\)."
+		  },
+		  {
+			"question": "Calculer : \\( \\sqrt{9}\\times\\sqrt{16} \\)",
+			"solution": "\\( 3\\times4=12 \\)."
+		  },
+		  {
+			"question": "Simplifier : \\( \\sqrt{72} \\)",
+			"solution": "\\( \\sqrt{36\\times2}=6\\sqrt{2} \\)."
+		  },
+		  {
+			"question": "Calculer : \\( (\\sqrt{7})^2 \\)",
+			"solution": "\\( 7 \\)."
+		  },
+		  {
+			"question": "Simplifier : \\( \\sqrt{200} \\)",
+			"solution": "\\( 10\\sqrt{2} \\)."
+		  },
+		  {
+			"question": "Calculer : \\( \\sqrt{8}\\times\\sqrt{2} \\)",
+			"solution": "\\( \\sqrt{16}=4 \\)."
+		  },
+		  {
+			"question": "Simplifier : \\( \\sqrt{18} \\)",
+			"solution": "\\( 3\\sqrt{2} \\)."
+		  },
+		  {
+			"question": "Calculer : \\( \\sqrt{121} \\)",
+			"solution": "\\( 11 \\)."
+		  },
+		  {
+			"question": "Simplifier : \\( \\sqrt{48} \\)",
+			"solution": "\\( 4\\sqrt{3} \\)."
+		  }
       ]
     },
     "calculLitteral": {
