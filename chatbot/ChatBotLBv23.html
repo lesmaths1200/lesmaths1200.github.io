@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assistant Mathématiques Collège</title>
+
+<!-- React -->
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body { background: #f9fafb; color: #111827; }
+body.dark { background: #0f172a; color: #e5e7eb; }
+
+.card, .bot-msg { background: #fff; border: 1px solid #e5e7eb; }
+.user-msg { background: #000; color: #fff; }
+
+body.dark .card,
+body.dark .bot-msg,
+body.dark .input-bar {
+  background: #020617;
+  border-color: #1e293b;
+}
+
+body.dark input {
+  background: #020617;
+  color: #e5e7eb;
+  border-color: #1e293b;
+}
+
+#chat-scroll {
+  position: absolute;
+  inset: 0 0 72px 0;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+#input-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  z-index: 100;
+}
+
+.katex { font-size: 1.1em; }
+</style>
+</head>
+
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+
+const SendIcon = () => (
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+<line x1="22" y1="2" x2="11" y2="13"></line>
+<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+</svg>
+);
+
+const YoutubeIcon = ({ size = 14 }) => (
+<svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+<path d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+</svg>
+);
+
+const MathText = ({ text }) => {
+const ref = useRef(null);
+useEffect(() => {
+if (ref.current && window.renderMathInElement) {
+renderMathInElement(ref.current, {
+delimiters: [
+{ left: "$$", right: "$$", display: true },
+{ left: "$", right: "$", display: false }
+],
+throwOnError: false
+});
+}
+}, [text]);
+return <div ref={ref} className="whitespace-pre-line text-sm">{text}</div>;
+};
+
+const App = () => {
+const [messages, setMessages] = useState([
+{ type: 'bot', text: "Bonjour ! 👋\nTape **menu** pour voir les thèmes." }
+]);
+const [input, setInput] = useState('');
+const [dark, setDark] = useState(false);
+const endRef = useRef(null);
+
+useEffect(() => {
+document.body.classList.toggle('dark', dark);
+}, [dark]);
+
+useEffect(() => {
+endRef.current?.scrollIntoView({ behavior: "smooth" });
+}, [messages]);
+
+const send = () => {
+if (!input.trim()) return;
+setMessages(m => [...m, { type: 'user', text: input }]);
+setMessages(m => [...m, { type: 'bot', text: "Réponse simulée." }]);
+setInput('');
+};
+
+return (
+<>
+<div id="chat-scroll">
+<div className="max-w-4xl mx-auto">
+
+{/* MENU DU HAUT (issu du fichier 18) */}
+<div className="card p-3 rounded-lg mb-4 text-center">
+<button onClick={()=>setInput('menu')}
+className="px-4 py-2 bg-purple-600 text-white rounded-full text-sm mr-2 font-semibold">
+📋 Menu
+</button>
+<button onClick={()=>window.open('https://www.youtube.com/@lesmaths1200','_blank')}
+className="px-4 py-2 bg-red-600 text-white rounded-full text-sm inline-flex items-center gap-2 font-semibold">
+<YoutubeIcon/> Ma chaîne YouTube
+</button>
+</div>
+
+{messages.map((m,i)=>(
+<div key={i} className={`flex mb-3 ${m.type==='user'?'justify-end':'justify-start'}`}>
+<div className={`${m.type==='user'?'user-msg':'bot-msg'} px-4 py-3 rounded-lg max-w-md shadow`}>
+<MathText text={m.text}/>
+</div>
+</div>
+))}
+
+<div ref={endRef}/>
+</div>
+</div>
+
+<div id="input-bar" className="input-bar">
+<div className="max-w-4xl mx-auto p-3 flex items-center gap-2">
+<button onClick={()=>setInput('menu')}
+className="px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-semibold">
+Menu
+</button>
+<button onClick={()=>window.open('https://www.youtube.com/@lesmaths1200','_blank')}
+className="px-4 py-2 bg-red-600 text-white rounded-full text-sm font-semibold">
+YouTube
+</button>
+<button onClick={()=>setDark(d=>!d)}
+className="px-3 py-2 rounded-full text-sm border">
+{dark ? '☀️' : '🌙'}
+</button>
+
+<input value={input}
+onChange={e=>setInput(e.target.value)}
+onKeyDown={e=>e.key==='Enter' && send()}
+placeholder="Pose ta question…"
+className="flex-1 border rounded-lg px-3 py-2 text-sm"/>
+
+<button onClick={send}
+className="bg-black text-white px-4 py-2 rounded-lg">
+<SendIcon/>
+</button>
+</div>
+</div>
+</>
+);
+};
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
