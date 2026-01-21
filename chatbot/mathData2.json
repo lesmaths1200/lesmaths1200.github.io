@@ -293,7 +293,27 @@
 		{
 		  "question": "Dans un triangle rectangle, les côtés de l’angle droit mesurent 6 cm et 8 cm. Calcule l’hypoténuse.",
 		  "reponse": "Solution :\n$$c^2 = 6^2 + 8^2 = 36 + 64 = 100$$\n$$c = 10$$ cm"
-		}
+		},
+		{
+          "question": "Une échelle de 10 m est posée contre un mur. Son pied est à 6 m du mur. À quelle hauteur atteint-elle le mur ?",
+          "solution": "\\( h=\\sqrt{10^2-6^2}=8 \\) m."
+        },
+        {
+          "question": "Un rectangle a une diagonale de 13 cm et une largeur de 5 cm. Calculer la longueur.",
+          "solution": "\\( L=\\sqrt{13^2-5^2}=12 \\)."
+        },
+        {
+          "question": "Un triangle rectangle a un côté de 7 cm et l’hypoténuse de 25 cm. Calculer l’autre côté.",
+          "solution": "\\( b=24 \\)."
+        },
+        {
+          "question": "Un terrain rectangulaire mesure 9 m par 12 m. Calculer la longueur de la diagonale.",
+          "solution": "\\( d=\\sqrt{9^2+12^2}=15 \\)."
+        },
+        {
+          "question": "Un câble relie le sommet d’un mât de 8 m à un point situé à 6 m du pied. Quelle est la longueur du câble ?",
+          "solution": "\\( c=\\sqrt{8^2+6^2}=10 \\)."
+        }
       ]
     },
     "proportionnalite": {
