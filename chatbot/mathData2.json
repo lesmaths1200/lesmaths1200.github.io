@@ -80,43 +80,43 @@
 		},
 		{
           "question": "Calculer et simplifier : \\( \\frac{1}{2}+\\frac{1}{4} \\).",
-          "solution": "\\( \\frac{1}{2}=\\frac{2}{4} \\Rightarrow \\frac{2}{4}+\\frac{1}{4}=\\frac{3}{4} \\)."
+          "reponse": "Solution : \\( \\frac{1}{2}=\\frac{2}{4} \\Rightarrow \\frac{2}{4}+\\frac{1}{4}=\\frac{3}{4} \\)."
 		},
 	    {
 	      "question": "Calculer : \\( \\frac{5}{6}-\\frac{1}{6} \\).",
-	      "solution": "\\( \\frac{4}{6}=\\frac{2}{3} \\)."
+	      "reponse": "Solution : \\( \\frac{4}{6}=\\frac{2}{3} \\)."
 		},
 	    {
 		  "question": "Calculer : \\( \\frac{3}{5}\\times\\frac{2}{3} \\).",
-		  "solution": "\\( \\frac{6}{15}=\\frac{2}{5} \\)."
+		  "reponse": "Solution : \\( \\frac{6}{15}=\\frac{2}{5} \\)."
 	    },
 	    {
 		  "question": "Calculer : \\( \\frac{7}{8}+\\frac{5}{4} \\).",
-		  "solution": "\\( \\frac{7}{8}+\\frac{10}{8}=\\frac{17}{8} \\)."
+		  "reponse": "Solution : \\( \\frac{7}{8}+\\frac{10}{8}=\\frac{17}{8} \\)."
 	    },
 	    {
 		  "question": "Calculer : \\( \\frac{9}{10}\\div\\frac{3}{5} \\).",
-		  "solution": "\\( \\frac{9}{10}\\times\\frac{5}{3}=\\frac{3}{2} \\)."
+		  "reponse": "Solution : \\( \\frac{9}{10}\\times\\frac{5}{3}=\\frac{3}{2} \\)."
 	    },
 	    {
 		  "question": "Un gâteau est partagé en 8 parts égales. Léa mange \\( \\frac{3}{8} \\) et Paul \\( \\frac{1}{4} \\). Quelle fraction du gâteau est mangée ?",
-		  "solution": "\\( \\frac{1}{4}=\\frac{2}{8} \\Rightarrow \\frac{3}{8}+\\frac{2}{8}=\\frac{5}{8} \\)."
+		  "reponse": "Solution : \\( \\frac{1}{4}=\\frac{2}{8} \\Rightarrow \\frac{3}{8}+\\frac{2}{8}=\\frac{5}{8} \\)."
 	    },
 	    {
 		  "question": "Une bouteille contient \\( \\frac{3}{4} \\) L de jus. On ajoute \\( \\frac{2}{3} \\) L. Quelle quantité totale ?",
-		  "solution": "\\( \\frac{3}{4}=\\frac{9}{12}, \\frac{2}{3}=\\frac{8}{12} \\Rightarrow \\frac{17}{12}=1\\frac{5}{12} \\)."
+		  "reponse": "Solution : \\( \\frac{3}{4}=\\frac{9}{12}, \\frac{2}{3}=\\frac{8}{12} \\Rightarrow \\frac{17}{12}=1\\frac{5}{12} \\)."
 	    },
 	    {
 		  "question": "Comparer \\( \\frac{5}{6} \\) et \\( \\frac{4}{5} \\).",
-		  "solution": "\\( \\frac{25}{30}>\\frac{24}{30} \\Rightarrow \\frac{5}{6}>\\frac{4}{5} \\)."
+		  "reponse": "Solution : \\( \\frac{25}{30}>\\frac{24}{30} \\Rightarrow \\frac{5}{6}>\\frac{4}{5} \\)."
 	    },
 	    {
 		  "question": "Un élève parcourt \\( \\frac{2}{3} \\) du trajet le matin et \\( \\frac{1}{4} \\) l’après-midi. A-t-il terminé ?",
-		  "solution": "\\( \\frac{8}{12}+\\frac{3}{12}=\\frac{11}{12}<1 \\Rightarrow \\) non."
+		  "reponse": "Solution : \\( \\frac{8}{12}+\\frac{3}{12}=\\frac{11}{12}<1 \\Rightarrow \\) non."
 	    },
 	    {
 		  "question": "Résoudre : \\( x+\\frac{3}{4}=\\frac{5}{2} \\).",
-		  "solution": "\\( x=\\frac{10}{4}-\\frac{3}{4}=\\frac{7}{4} \\)."
+		  "reponse": "Solution : \\( x=\\frac{10}{4}-\\frac{3}{4}=\\frac{7}{4} \\)."
 	    }
       ]
     },
@@ -187,43 +187,43 @@
 		},
 		{
 		  "question": "Résoudre : \\( x+7=15 \\)",
-		  "solution": "\\( x=15-7=8 \\)."
+		  "reponse": "Solution : \\( x=15-7=8 \\)."
 		},
 		{
 		  "question": "Résoudre : \\( 3x=21 \\)",
-		  "solution": "\\( x=7 \\)."
+		  "reponse": "Solution : \\( x=7 \\)."
 		},
 		{
 		  "question": "Résoudre : \\( 5x-10=0 \\)",
-		  "solution": "\\( 5x=10 \\Rightarrow x=2 \\)."
+		  "reponse": "Solution : \\( 5x=10 \\Rightarrow x=2 \\)."
 		},
 		{
 		  "question": "Résoudre : \\( 2x+4=18 \\)",
-		  "solution": "\\( 2x=14 \\Rightarrow x=7 \\)."
+		  "reponse": "Solution : \\( 2x=14 \\Rightarrow x=7 \\)."
 		},
 		{
 		  "question": "Résoudre : \\( 4x-6=10 \\)",
-		  "solution": "\\( 4x=16 \\Rightarrow x=4 \\)."
+		  "reponse": "Solution : \\( 4x=16 \\Rightarrow x=4 \\)."
 		},
 		{
 		  "question": "Résoudre : \\( 9-2x=1 \\)",
-		  "solution": "\\( -2x=-8 \\Rightarrow x=4 \\)."
+		  "reponse": "Solution : \\( -2x=-8 \\Rightarrow x=4 \\)."
 		},
 		{
 		  "question": "Résoudre : \\( 6x=3 \\)",
-		  "solution": "\\( x=\\frac{1}{2} \\)."
+		  "reponse": "Solution : \\( x=\\frac{1}{2} \\)."
 		},
 		{
 		  "question": "Résoudre : \\( x-\\frac{3}{4}=\\frac{1}{4} \\)",
-		  "solution": "\\( x=1 \\)."
+		  "reponse": "Solution : \\( x=1 \\)."
 		},
 		{
 		  "question": "Résoudre : \\( \\frac{x}{5}=3 \\)",
-		  "solution": "\\( x=15 \\)."
+		  "reponse": "Solution : \\( x=15 \\)."
 		},
 		{
 		  "question": "Résoudre : \\( 2(x+3)=14 \\)",
-		  "solution": "\\( x+3=7 \\Rightarrow x=4 \\)."
+		  "reponse": "Solution : \\( x+3=7 \\Rightarrow x=4 \\)."
 		}
 
       ]
@@ -296,23 +296,23 @@
 		},
 		{
           "question": "Une échelle de 10 m est posée contre un mur. Son pied est à 6 m du mur. À quelle hauteur atteint-elle le mur ?",
-          "solution": "\\( h=\\sqrt{10^2-6^2}=8 \\) m."
+          "reponse": "Solution : \\( h=\\sqrt{10^2-6^2}=8 \\) m."
         },
         {
           "question": "Un rectangle a une diagonale de 13 cm et une largeur de 5 cm. Calculer la longueur.",
-          "solution": "\\( L=\\sqrt{13^2-5^2}=12 \\)."
+          "reponse": "Solution : \\( L=\\sqrt{13^2-5^2}=12 \\)."
         },
         {
           "question": "Un triangle rectangle a un côté de 7 cm et l’hypoténuse de 25 cm. Calculer l’autre côté.",
-          "solution": "\\( b=24 \\)."
+          "reponse": "Solution : \\( b=24 \\)."
         },
         {
           "question": "Un terrain rectangulaire mesure 9 m par 12 m. Calculer la longueur de la diagonale.",
-          "solution": "\\( d=\\sqrt{9^2+12^2}=15 \\)."
+          "reponse": "Solution : \\( d=\\sqrt{9^2+12^2}=15 \\)."
         },
         {
           "question": "Un câble relie le sommet d’un mât de 8 m à un point situé à 6 m du pied. Quelle est la longueur du câble ?",
-          "solution": "\\( c=\\sqrt{8^2+6^2}=10 \\)."
+          "reponse": "Solution : \\( c=\\sqrt{8^2+6^2}=10 \\)."
         }
       ]
     },
@@ -445,43 +445,43 @@
         },
 		{
 		  "question": "Calculer : \\( \\sqrt{81} \\)",
-		  "solution": "\\( 9 \\)."
+		  "reponse": "Solution : \\( 9 \\)."
 		},
 	    {
 	      "question": "Simplifier : \\( \\sqrt{50} \\)",
-		  "solution": "\\( \\sqrt{25\\times2}=5\\sqrt{2} \\)."
+		  "reponse": "Solution : \\( \\sqrt{25\\times2}=5\\sqrt{2} \\)."
 	    },
 	    {
 		  "question": "Calculer : \\( \\sqrt{9}\\times\\sqrt{16} \\)",
-		  "solution": "\\( 3\\times4=12 \\)."
+		  "reponse": "Solution : \\( 3\\times4=12 \\)."
 	    },
 	    {
 		  "question": "Simplifier : \\( \\sqrt{72} \\)",
-		  "solution": "\\( \\sqrt{36\\times2}=6\\sqrt{2} \\)."
+		  "reponse": "Solution : \\( \\sqrt{36\\times2}=6\\sqrt{2} \\)."
 	    },
 	    {
 		  "question": "Calculer : \\( (\\sqrt{7})^2 \\)",
-		  "solution": "\\( 7 \\)."
+		  "reponse": "Solution : \\( 7 \\)."
 	    },
 	    {
 		  "question": "Simplifier : \\( \\sqrt{200} \\)",
-		  "solution": "\\( 10\\sqrt{2} \\)."
+		  "reponse": "Solution : \\( 10\\sqrt{2} \\)."
 	    },
 	    {
 		  "question": "Calculer : \\( \\sqrt{8}\\times\\sqrt{2} \\)",
-		  "solution": "\\( \\sqrt{16}=4 \\)."
+		  "reponse": "Solution : \\( \\sqrt{16}=4 \\)."
 	    },
 	    {
 		  "question": "Simplifier : \\( \\sqrt{18} \\)",
-		  "solution": "\\( 3\\sqrt{2} \\)."
+		  "reponse": "Solution : \\( 3\\sqrt{2} \\)."
 	    },
 	    {
 		  "question": "Calculer : \\( \\sqrt{121} \\)",
-		  "solution": "\\( 11 \\)."
+		  "reponse": "Solution : \\( 11 \\)."
 	    },
 	    {
 		  "question": "Simplifier : \\( \\sqrt{48} \\)",
-		  "solution": "\\( 4\\sqrt{3} \\)."
+		  "reponse": "Solution : \\( 4\\sqrt{3} \\)."
 	    }
       ]
     },
@@ -521,43 +521,43 @@
         },
 		{ 
 		  "question": "Développer \\( 3(x+4) \\)", 
-		  "solution": "\\( 3x+12 \\)" 
+		  "reponse": "Solution : \\( 3x+12 \\)" 
 		},
 		{ 
 		  "question": "Développer \\( 5(2x-3) \\)", 
-		  "solution": "\\( 10x-15 \\)" 
+		  "reponse": "Solution : \\( 10x-15 \\)" 
 		},
 		{ 
 		  "question": "Réduire \\( 4x+7+3x-2 \\)", 
-		  "solution": "\\( 7x+5 \\)" 
+		  "reponse": "Solution : \\( 7x+5 \\)" 
 		},
 		{ 
 		  "question": "Factoriser \\( 8x+12 \\)", 
-		  "solution": "\\( 4(2x+3) \\)" 
+		  "reponse": "Solution : \\( 4(2x+3) \\)" 
 		},
 		{ 
 		  "question": "Développer \\( (x+3)(x+5) \\)", 
-		  "solution": "\\( x^2+8x+15 \\)" 
+		  "reponse": "Solution : \\( x^2+8x+15 \\)" 
 		},
 		{ 
 		  "question": "Développer \\( (x+7)^2 \\)", 
-		  "solution": "\\( x^2+14x+49 \\)" 
+		  "reponse": "Solution : \\( x^2+14x+49 \\)" 
 		},
 		{ 
 		  "question": "Factoriser \\( x^2+9x \\)", 
-		  "solution": "\\( x(x+9) \\)" 
+		  "reponse": "Solution : \\( x(x+9) \\)" 
 		},
 		{ 
 		  "question": "Factoriser \\( x^2-16 \\)", 
-		  "solution": "\\( (x-4)(x+4) \\)" 
+		  "reponse": "Solution : \\( (x-4)(x+4) \\)" 
 		},
 		{ 
 		  "question": "Réduire \\( 6a-3+2a+5 \\)", 
-		  "solution": "\\( 8a+2 \\)" 
+		  "reponse": "Solution : \\( 8a+2 \\)" 
 		},
 		{ 
 		  "question": "Développer \\( 2(x-5) \\)", 
-		  "solution": "\\( 2x-10 \\)" 
+		  "reponse": "Solution : \\( 2x-10 \\)" 
 		}
       ]
     },
@@ -787,43 +787,43 @@
         },
 		{
           "question": "Soit \\( f(x)=2x \\). Calculer \\( f(3) \\).",
-          "solution": "\\( f(3)=6 \\)."
+          "reponse": "Solution : \\( f(3)=6 \\)."
         },
         {
           "question": "Soit \\( f(x)=x+4 \\). Calculer \\( f(5) \\).",
-          "solution": "\\( f(5)=9 \\)."
+          "reponse": "Solution : \\( f(5)=9 \\)."
         },
         {
           "question": "Soit \\( f(x)=3x-1 \\). Calculer \\( f(2) \\).",
-          "solution": "\\( f(2)=5 \\)."
+          "reponse": "Solution : \\( f(2)=5 \\)."
         },
         {
           "question": "Soit \\( f(x)=x^2 \\). Calculer \\( f(4) \\).",
-          "solution": "\\( 16 \\)."
+          "reponse": "Solution : \\( 16 \\)."
         },
         {
           "question": "Soit \\( f(x)=2x+1 \\). Calculer \\( f(0) \\).",
-          "solution": "\\( 1 \\)."
+          "reponse": "Solution : \\( 1 \\)."
         },
         {
           "question": "Soit \\( f(x)=2x \\). Trouver la préimage de 10.",
-          "solution": "\\( 2x=10 \\Rightarrow x=5 \\)."
+          "reponse": "Solution : \\( 2x=10 \\Rightarrow x=5 \\)."
         },
         {
           "question": "Soit \\( f(x)=x+3 \\). Trouver la préimage de 7.",
-          "solution": "\\( x+3=7 \\Rightarrow x=4 \\)."
+          "reponse": "Solution : \\( x+3=7 \\Rightarrow x=4 \\)."
         },
         {
           "question": "Soit \\( f(x)=3x-1 \\). Trouver la préimage de 8.",
-          "solution": "\\( 3x-1=8 \\Rightarrow x=3 \\)."
+          "reponse": "Solution : \\( 3x-1=8 \\Rightarrow x=3 \\)."
         },
         {
           "question": "Soit \\( f(x)=x^2 \\). Trouver les préimages de 9.",
-          "solution": "\\( x^2=9 \\Rightarrow x=\\pm3 \\)."
+          "reponse": "Solution : \\( x^2=9 \\Rightarrow x=\\pm3 \\)."
         },
         {
           "question": "Une fonction est définie par \\( f(x)=2x-4 \\). Déterminer le nombre dont l’image est 0.",
-          "solution": "\\( 2x-4=0 \\Rightarrow x=2 \\)."
+          "reponse": "Solution : \\( 2x-4=0 \\Rightarrow x=2 \\)."
         }
       ]
     },
