@@ -23,25 +23,13 @@
       },
       "exercices": [
 	    {
-		  "question": "Comparer  \\frac{5}{6}  et  \\frac{4}{5} .",
+		  "question": "Calculer la somme $\\frac{1}{2} + \\frac{3}{4}$ et vérifier que $\\frac{1}{2} + \\frac{3}{4} = \\frac{5}{4}$.",
 		  "reponse": "Solution :  \\frac{25}{30}>\\frac{24}{30} \\Rightarrow \\frac{5}{6}>\\frac{4}{5} ."
 	    },
 		{
-		  "question": "Comparer  $$\\frac{4}{5}  et  \\frac{5}{6} .$$",
+		  "question": "Pour $x = -3$, vérifier que $x^2 = 9$ et $(-x)^2 = 9$ également.",
 		  "reponse": "Solution :  $$\\frac{25}{30}>\\frac{24}{30} \\Rightarrow \\frac{5}{6}>\\frac{4}{5}$$ ."
 	    },
-	    {
-		  "question": "Alice parcourt  $$\\frac{2}{3}$$  du trajet le matin et  $$\\frac{1}{4}$$  l’après-midi. A-t-il terminé ?",
-		  "reponse": "Solution :  $$\\frac{8}{12}+\\frac{3}{12}=\\frac{11}{12}<1 \\Rightarrow$$  non."
-	    },
-		{
-		  "question": "Augustin parcourt  $\\frac{2}{3}$  du trajet le matin et  $\\frac{1}{4}$  l’après-midi. A-t-il terminé ?",
-		  "reponse": "Solution :  $\\frac{8}{12}+\\frac{3}{12}=\\frac{11}{12}<1 \\Rightarrow$  non."
-	    },
-	    {
-		  "question": "Résoudre :  $x+\\frac{3}{4}=\\frac{5}{2}$ .",
-		  "reponse": "Solution :  x=$\\frac{10}{4}-\\frac{3}{4}=\\frac{7}{4}$ ."
-	    }
       ]
     },
     "equations": {
