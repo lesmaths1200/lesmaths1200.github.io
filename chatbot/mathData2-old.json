@@ -79,44 +79,44 @@
 		  "reponse": "Solution :\n$\\frac{10}{3} \\times \\frac{6}{5} = \\frac{60}{15} = 4$"
 		},
 		{
-          "question": "Calculer et simplifier :  $\\frac{1}{2}+\\frac{1}{4}$ .",
-          "reponse": "Solution :  $\\frac{1}{2}=\\frac{2}{4} \\Rightarrow \\frac{2}{4}+\\frac{1}{4}=\\frac{3}{4} .$"
+          "question": "Calculer et simplifier :  $\\frac{1}{2}+\\frac{1}{4}$.",
+          "reponse": "Solution :  $\\frac{1}{2}=\\frac{2}{4} \\Rightarrow \\frac{2}{4}+\\frac{1}{4}=\\frac{3}{4}$."
 		},
 	    {
-	      "question": "Calculer :  $\\frac{5}{6}-\\frac{1}{6} .$",
-	      "reponse": "Solution :  $\\frac{4}{6}=\\frac{2}{3} .$"
+	      "question": "Calculer :  $\\frac{5}{6}-\\frac{1}{6}$.",
+	      "reponse": "Solution :  $\\frac{4}{6}=\\frac{2}{3}$."
 		},
 	    {
-		  "question": "Calculer :  $\\frac{3}{5}\\times\\frac{2}{3} .$",
-		  "reponse": "Solution :  $\\frac{6}{15}=\\frac{2}{5} .$"
+		  "question": "Calculer :  $\\frac{3}{5}\\times\\frac{2}{3}$.",
+		  "reponse": "Solution :  $\\frac{6}{15}=\\frac{2}{5}$."
 	    },
 	    {
-		  "question": "Calculer :  $\\frac{7}{8}+\\frac{5}{4} .$",
-		  "reponse": "Solution :  $\\frac{7}{8}+\\frac{10}{8}=\\frac{17}{8} .$"
+		  "question": "Calculer :  $\\frac{7}{8}+\\frac{5}{4}$.",
+		  "reponse": "Solution :  $\\frac{7}{8}+\\frac{10}{8}=\\frac{17}{8}$."
 	    },
 	    {
-		  "question": "Calculer :  $\\frac{9}{10}\\div\\frac{3}{5} .$",
-		  "reponse": "Solution :  $\\frac{9}{10}\\times\\frac{5}{3}=\\frac{3}{2} .$"
+		  "question": "Calculer :  $\\frac{9}{10}\\div\\frac{3}{5}$.",
+		  "reponse": "Solution :  $\\frac{9}{10}\\times\\frac{5}{3}=\\frac{3}{2}$."
 	    },
 	    {
 		  "question": "Un gâteau est partagé en 8 parts égales. Léa mange  $\\frac{3}{8}$  et Paul  $\\frac{1}{4}$ . Quelle fraction du gâteau est mangée ?",
-		  "reponse": "Solution :  $\\frac{1}{4}=\\frac{2}{8} \\Rightarrow \\frac{3}{8}+\\frac{2}{8}=\\frac{5}{8} .$"
+		  "reponse": "Solution :  $\\frac{1}{4}=\\frac{2}{8} \\Rightarrow \\frac{3}{8}+\\frac{2}{8}=\\frac{5}{8}$ ."
 	    },
 	    {
-		  "question": "Une bouteille contient  $\\frac{3}{4}$  L de jus. On ajoute  $\\frac{2}{3}$  L. Quelle quantité totale ?",
-		  "reponse": "Solution :  $\\frac{3}{4}=\\frac{9}{12}, \\frac{2}{3}=\\frac{8}{12} \\Rightarrow \\frac{17}{12}=1\\frac{5}{12} .$"
+		  "question": "Une bouteille contient  $\\frac{3}{4}$ L de jus. On ajoute $\\frac{2}{3}$ L. Quelle quantité totale ?",
+		  "reponse": "Solution :  $\\frac{3}{4}=\\frac{9}{12}, \\frac{2}{3}=\\frac{8}{12} \\Rightarrow \\frac{17}{12}=1\\frac{5}{12}$."
 	    },
 	    {
-		  "question": "Comparer  $\\frac{5}{6}$  et  $\\frac{4}{5} .$",
-		  "reponse": "Solution :  $\\frac{25}{30}>\\frac{24}{30} \\Rightarrow \\frac{5}{6}>\\frac{4}{5} .$"
+		  "question": "Comparer  $\\frac{5}{6}$ et $\\frac{4}{5}$.",
+		  "reponse": "Solution :  $\\frac{25}{30}>\\frac{24}{30} \\Rightarrow \\frac{5}{6}>\\frac{4}{5}$."
 	    },
 	    {
-		  "question": "Un élève parcourt  $\\frac{2}{3}$  du trajet le matin et  $\\frac{1}{4}$  l’après-midi. A-t-il terminé ?",
-		  "reponse": "Solution :  $\\frac{8}{12}+\\frac{3}{12}=\\frac{11}{12}<1 \\Rightarrow$  non."
+		  "question": "Un élève parcourt $\\frac{2}{3}$ du trajet le matin et $\\frac{1}{4}$ l’après-midi. A-t-il terminé ?",
+		  "reponse": "Solution :  $\\frac{8}{12}+\\frac{3}{12}=\\frac{11}{12}<1 \\Rightarrow$ non."
 	    },
 	    {
-		  "question": "Résoudre :  $x+\\frac{3}{4}=\\frac{5}{2} .$",
-		  "reponse": "Solution :  $x=\\frac{10}{4}-\\frac{3}{4}=\\frac{7}{4} .$"
+		  "question": "Résoudre :  $x+\\frac{3}{4}=\\frac{5}{2}$.",
+		  "reponse": "Solution :  $x=\\frac{10}{4}-\\frac{3}{4}=\\frac{7}{4}$."
 	    }
       ]
     },
