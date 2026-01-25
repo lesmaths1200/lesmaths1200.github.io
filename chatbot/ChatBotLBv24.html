@@ -135,17 +135,6 @@ if (m.startsWith('cours')) {
 const n = m.match(/cours (\d+)/);
 if (n) {
 const t = Object.values(mathData.themes)[n[1]-1];
-if (t.image) {
-      content += `
-        <div style="text-align:center; margin:1em 0;">
-          <img 
-            src="${t.image}" 
-            alt="Illustration ${t.nom}"
-            style="max-width:100%; border:1px solid #ccc; border-radius:6px;"
-          >
-        </div>
-      \n\n`;
-    }
 return `📖 ${t.nom}\n\n${Object.values(t.explanations).join('\n\n────────\n\n')}`;
 }
 }

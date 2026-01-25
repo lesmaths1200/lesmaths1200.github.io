@@ -233,6 +233,8 @@
 	  "image": "pythagore.jpg",
       "keywords": ["pythagore", "hypoténuse", "hypothenuse", "triangle rectangle"],
       "explanations": {
+		"introduction": "On considère la configuration suivante :",
+		"image": "<img src='pythagore.jpg' alt='Triangle rectangle'>",
         "theoreme": "Dans un triangle rectangle :\n\n$a^2 + b^2 = c^2$\n\noù :\n• $a$ et $b$ sont les côtés de l'angle droit\n• $c$ est l'hypoténuse (le côté le plus long)\n\n📐 L'hypoténuse est opposée à l'angle droit",
         "calculHypothenuse": "Pour calculer l'hypoténuse :\n\n1️⃣ Élève chaque côté au carré\n2️⃣ Additionne les résultats\n3️⃣ Prends la racine carrée\n\n📌 Exemple : côtés = 3 cm et 4 cm\n\n$c^2 = 3^2 + 4^2$\n$c^2 = 9 + 16 = 25$\n$c = \\sqrt{25} = 5\\text{ cm}$",
         "calculCote": "Pour calculer un côté :\n\n$a^2 = c^2 - b^2$\n\n📌 Exemple : hypoténuse = 13 cm, un côté = 5 cm\n\n$a^2 = 13^2 - 5^2$\n$a^2 = 169 - 25 = 144$\n$a = \\sqrt{144} = 12\\text{ cm}$",
