@@ -693,6 +693,7 @@
       "nom": "Théorème de Thalès",
       "keywords": ["thalès", "thales", "proportionnalité", "triangles", "parallèles", "paralleles", "réciproque"],
       "explanations": {
+		"introduction": "On considère les configurations possibles suivantes :",
 		"image": {
           "src": "thales.jpg",
           "alt": "Configurations possibles"
