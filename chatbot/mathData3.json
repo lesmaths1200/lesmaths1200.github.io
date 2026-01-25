@@ -425,7 +425,7 @@
       "explanations": {
         "definition": "La racine carrée d'un nombre positif $a$ est le nombre positif dont le carré vaut $a$ :\n\n$\\sqrt{a} \\times \\sqrt{a} = a$\n\n📌 Exemples :\n• $\\sqrt{25} = 5$ car $5^2 = 25$\n• $\\sqrt{9} = 3$ car $3^2 = 9$\n• $\\sqrt{100} = 10$ car $10^2 = 100$",
         "regles": "Règles de calcul :\n\n1️⃣ Produit : $\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}$\n\n2️⃣ Quotient : $\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}$\n\n3️⃣ Carré : $(\\sqrt{a})^2 = a$\n\n📌 Exemples :\n• $\\sqrt{4} \\times \\sqrt{9} = \\sqrt{36} = 6$\n• $\\frac{\\sqrt{50}}{\\sqrt{2}} = \\sqrt{\\frac{50}{2}} = \\sqrt{25} = 5$",
-        "sracines": "$\\sqrt{a} + \\sqrt{b}$ n'est pas à égal à $\\sqrt{a+b}$\nExemple: $\\sqrt9 + \\sqrt16 = 7$ est différent de $\\sqrt25 = 5$",
+        "sracines": "$\\sqrt{a} + \\sqrt{b}$ n'est pas à égal à $\\sqrt{a+b}$\nExemple: $\\sqrt9 + \\sqrt16 = 3 + 4 = 7$ est différent de $\\sqrt25 = 5$",
 		"simplification": "Simplifier une racine carrée :\n\n1️⃣ Cherche un carré parfait dans le nombre\n2️⃣ Factorise\n3️⃣ Simplifie\n\n📌 Exemple : $\\sqrt{18}$\n• $18 = 9 \\times 2 = 3^2 \\times 2$\n• $\\sqrt{18} = \\sqrt{3^2 \\times 2} = 3\\sqrt{2}$\n\n📌 Exemple : $\\sqrt{75}$\n• $75 = 25 \\times 3 = 5^2 \\times 3$\n• $\\sqrt{75} = 5\\sqrt{3}$"
       },
       "exercices": [
