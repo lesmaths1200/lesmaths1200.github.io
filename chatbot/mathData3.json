@@ -693,6 +693,10 @@
       "nom": "Théorème de Thalès",
       "keywords": ["thalès", "thales", "proportionnalité", "triangles", "parallèles", "paralleles", "réciproque"],
       "explanations": {
+		"image": {
+          "src": "thales.jpg",
+          "alt": "Configurations possibles"
+        },
         "theoreme": "Théorème de Thalès :\n\nSi deux droites sont **parallèles**, alors elles définissent sur deux sécantes des segments **proportionnels**.\n\n📌 Configuration : Triangles emboîtés\nSi (BC) // (MN), alors :\n\n$\\frac{AM}{AB} = \\frac{AN}{AC} = \\frac{MN}{BC}$\n\n📌 Exemple :\n• AM = 3 cm, AB = 5 cm, AN = 4.5 cm\n• $\\frac{3}{5} = \\frac{4.5}{AC}$\n• $AC = \\frac{5 \\times 4.5}{3} = 7.5\\text{ cm}$",
         "reciproque": "Réciproque de Thalès :\n\nSi les rapports sont **égaux**, alors les droites sont **parallèles**.\n\n📌 Si $\\frac{AM}{AB} = \\frac{AN}{AC}$ alors (MN) // (BC)\n\n📌 Exemple :\n• AM = 4 cm, AB = 6 cm, AN = 6 cm, AC = 9 cm\n• $\\frac{4}{6} = \\frac{2}{3}$ et $\\frac{6}{9} = \\frac{2}{3}$\n• Les rapports sont égaux ✓\n• Donc (MN) // (BC)",
         "contraposee": "Contraposée de Thalès :\n\nSi les rapports sont **différents**, alors les droites sont **non parallèles**.\n\n📌 Si $\\frac{AM}{AB} \\neq \\frac{AN}{AC}$ alors (MN) non // (BC)\n\n📌 Exemple :\n• AM = 3 cm, AB = 7 cm, AN = 4 cm, AC = 8 cm\n• $\\frac{3}{7} ≈ 0.43$ et $\\frac{4}{8} = 0.5$\n• Les rapports sont différents ✗\n• Donc (MN) non // (BC)"
