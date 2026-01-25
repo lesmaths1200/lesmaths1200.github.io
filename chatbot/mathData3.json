@@ -238,9 +238,9 @@
           "alt": "Triangle rectangle"
         },
 		"theoreme": "Dans un triangle rectangle :\n\n$c^2 = a^2 + b^2$\n\noù :\n• $c$ est l'hypoténuse (le côté le plus long)\n• $a$ et $b$ sont les côtés de l'angle droit\n\n📐 L'hypoténuse est opposée à l'angle droit",
-        "calculHypothenuse": "Pour calculer l'hypoténuse :\n\n1️⃣ Élève chaque côté au carré\n2️⃣ Additionne les résultats\n3️⃣ Prends la racine carrée\n\n📌 Exemple : côtés = 3 cm et 4 cm\n\n$c^2 = 3^2 + 4^2$\n$c^2 = 9 + 16 = 25$\n$c = \\sqrt{25} = 5\\text{ cm}$",
+        "calculHypothenuse": "Pour calculer l'hypoténuse :\n\n1️⃣ Élève chaque côté au carré\n2️⃣ Additionne les résultats\n3️⃣ Prends la racine carrée\n\n📌 Exemple : côtés de l'angle droit égaux à 3 cm et 4 cm\n\n$c^2 = 3^2 + 4^2$\n$c^2 = 9 + 16 = 25$\n$c = \\sqrt{25} = 5\\text{ cm}$",
         "calculCote": "Pour calculer un côté :\n\n$a^2 = c^2 - b^2$\n\n📌 Exemple : hypoténuse = 13 cm, un côté = 5 cm\n\n$a^2 = 13^2 - 5^2$\n$a^2 = 169 - 25 = 144$\n$a = \\sqrt{144} = 12\\text{ cm}$",
-        "reciproque": "Réciproque de Pythagore :\n\nSi $c^2 = a^2 + b^2$, alors le triangle est rectangle.\n\n📌 Exemple : côtés 5, 12, 13\n\n$13^2 = 169$\n$5^2 + 12^2 = 25 + 144 = 169$\n\nÉgalité vérifiée ✓ → Triangle rectangle !"
+        "reciproque": "Réciproque de Pythagore :\n\nSi $c^2 = a^2 + b^2$ alors le triangle est rectangle.\n\n📌 Exemple : côtés 5, 12 et 13 cm\n\n$13^2 = 169$\n$5^2 + 12^2 = 25 + 144 = 169$\n\nÉgalité vérifiée ? ✓ → Le triangle est rectangle !"
       },
       "exercices": [
         {
@@ -425,7 +425,8 @@
       "explanations": {
         "definition": "La racine carrée d'un nombre positif $a$ est le nombre positif dont le carré vaut $a$ :\n\n$\\sqrt{a} \\times \\sqrt{a} = a$\n\n📌 Exemples :\n• $\\sqrt{25} = 5$ car $5^2 = 25$\n• $\\sqrt{9} = 3$ car $3^2 = 9$\n• $\\sqrt{100} = 10$ car $10^2 = 100$",
         "regles": "Règles de calcul :\n\n1️⃣ Produit : $\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}$\n\n2️⃣ Quotient : $\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}$\n\n3️⃣ Carré : $(\\sqrt{a})^2 = a$\n\n📌 Exemples :\n• $\\sqrt{4} \\times \\sqrt{9} = \\sqrt{36} = 6$\n• $\\frac{\\sqrt{50}}{\\sqrt{2}} = \\sqrt{\\frac{50}{2}} = \\sqrt{25} = 5$",
-        "simplification": "Simplifier une racine carrée :\n\n1️⃣ Cherche un carré parfait dans le nombre\n2️⃣ Factorise\n3️⃣ Simplifie\n\n📌 Exemple : $\\sqrt{18}$\n• $18 = 9 \\times 2 = 3^2 \\times 2$\n• $\\sqrt{18} = \\sqrt{3^2 \\times 2} = 3\\sqrt{2}$\n\n📌 Exemple : $\\sqrt{75}$\n• $75 = 25 \\times 3 = 5^2 \\times 3$\n• $\\sqrt{75} = 5\\sqrt{3}$"
+        "attention:" "$\\sqrt{a} + \\sqrt{b}$ n'est pas à égal à $\\sqrt{a+b}$\n En effet, $\\sqrt(9)+\\sqrt(16) <> \\sqrt(25)$",
+		"simplification": "Simplifier une racine carrée :\n\n1️⃣ Cherche un carré parfait dans le nombre\n2️⃣ Factorise\n3️⃣ Simplifie\n\n📌 Exemple : $\\sqrt{18}$\n• $18 = 9 \\times 2 = 3^2 \\times 2$\n• $\\sqrt{18} = \\sqrt{3^2 \\times 2} = 3\\sqrt{2}$\n\n📌 Exemple : $\\sqrt{75}$\n• $75 = 25 \\times 3 = 5^2 \\times 3$\n• $\\sqrt{75} = 5\\sqrt{3}$"
       },
       "exercices": [
         {
@@ -607,7 +608,7 @@
         "capacite": "Unités de capacité :\n\n$\\text{kL} \\rightarrow \\text{hL} \\rightarrow \\text{daL} \\rightarrow \\text{L} \\rightarrow \\text{dL} \\rightarrow \\text{cL} \\rightarrow \\text{mL}$\n\n📌 Exemples :\n• $1 \\text{ L} = 1000 \\text{ mL}$\n• $2.5 \\text{ L} = 250 \\text{ cL}$\n• $5000 \\text{ mL} = 5 \\text{ L}$\n• $0.75 \\text{ L} = 75 \\text{ cL}$",
         "aire": "Unités d'aire :\n\n$\\text{km}^2 \\rightarrow \\text{hm}^2 \\rightarrow \\text{dam}^2 \\rightarrow \\text{m}^2 \\rightarrow \\text{dm}^2 \\rightarrow \\text{cm}^2 \\rightarrow \\text{mm}^2$\n\n⚠️ Chaque flèche = × 100 ou ÷ 100\n\n📌 Exemples :\n• $1 \\text{ m}^2 = 10000 \\text{ cm}^2$\n• $1 \\text{ km}^2 = 1000000 \\text{ m}^2$\n• $500 \\text{ cm}^2 = 0.05 \\text{ m}^2$",
         "volume": "Unités de volume :\n\n$\\text{km}^3 \\rightarrow \\text{hm}^3 \\rightarrow \\text{dam}^3 \\rightarrow \\text{m}^3 \\rightarrow \\text{dm}^3 \\rightarrow \\text{cm}^3 \\rightarrow \\text{mm}^3$\n\n⚠️ Chaque flèche = × 1000 ou ÷ 1000\n\n📌 Exemples :\n• $1 \\text{ m}^3 = 1000 \\text{ dm}^3 = 1000 \\text{ L}$\n• $1 \\text{ dm}^3 = 1 \\text{ L}$\n• $5000 \\text{ cm}^3 = 5 \\text{ dm}^3 = 5 \\text{ L}$",
-        "duree": "Unités de durée :\n\n• $1 \\text{ h} = 60 \\text{ min}$\n• $1 \\text{ min} = 60 \\text{ s}$\n• $1 \\text{ h} = 3600 \\text{ s}$\n\n📌 Exemples :\n• $2.5 \\text{ h} = 2 \\text{ h } 30 \\text{ min} = 150 \\text{ min}$\n• $90 \\text{ min} = 1 \\text{ h } 30 \\text{ min} = 1.5 \\text{ h}$\n• $3600 \\text{ s} = 60 \\text{ min} = 1 \\text{ h}$"
+        "duree": "Unités de durée :\n\n• $1 \\text{ h} = 60 \\text{ min}$\n• $1 \\text{ min} = 60 \\text{ s}$\n• $1 \\text{ h} = 3600 \\text{ s}$\n• $1 \\text{ j} = 24 \\text{ h}$\n\n📌 Exemples :\n• $2.5 \\text{ h} = 2 \\text{ h } 30 \\text{ min} = 150 \\text{ min}$\n• $90 \\text{ min} = 1 \\text{ h } 30 \\text{ min} = 1.5 \\text{ h}$\n• $3600 \\text{ s} = 60 \\text{ min} = 1 \\text{ h}$"
       },
       "exercices": [
         {
