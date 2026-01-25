@@ -230,7 +230,6 @@
     },
     "pythagore": {
       "nom": "Théorème de Pythagore",
-	  "image": "pythagore.jpg",
       "keywords": ["pythagore", "hypoténuse", "hypothenuse", "triangle rectangle"],
       "explanations": {
 		"introduction": "On considère la configuration suivante :",
@@ -689,7 +688,6 @@
     },
     "thales": {
       "nom": "Théorème de Thalès",
-	  "image": "thales-config.jpg",
       "keywords": ["thalès", "thales", "proportionnalité", "triangles", "parallèles", "paralleles", "réciproque"],
       "explanations": {
         "theoreme": "Théorème de Thalès :\n\nSi deux droites sont **parallèles**, alors elles définissent sur deux sécantes des segments **proportionnels**.\n\n📌 Configuration : Triangles emboîtés\nSi (BC) // (MN), alors :\n\n$\\frac{AM}{AB} = \\frac{AN}{AC} = \\frac{MN}{BC}$\n\n📌 Exemple :\n• AM = 3 cm, AB = 5 cm, AN = 4.5 cm\n• $\\frac{3}{5} = \\frac{4.5}{AC}$\n• $AC = \\frac{5 \\times 4.5}{3} = 7.5\\text{ cm}$",
