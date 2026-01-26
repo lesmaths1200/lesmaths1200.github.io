@@ -122,7 +122,7 @@
     },
     "equations": {
       "nom": "Équations",
-      "keywords": ["équation", "equations", "équa", "equa", "résoudre", "inconnu", "x", "résous"],
+      "keywords": ["équation", "equations", "équa", "equa", "résoudre", "inconnu", "résous"],
       "explanations": {
         "simple": "Pour résoudre $ax + b = c$ :\n\n1️⃣ Isole les termes avec $x$ d'un côté\n2️⃣ Isole les nombres de l'autre côté\n3️⃣ Divise par le coefficient de $x$\n\n📌 Exemple : $2x + 5 = 13$\n\n$2x = 13 - 5$\n$2x = 8$\n$x = \\frac{8}{2} = 4$",
         "verification": "⚠️ Toujours vérifier ta solution !\n\nRemplace $x$ par ta valeur dans l'équation d'origine.\n\n📌 Vérification pour $x = 4$ dans $2x + 5 = 13$ :\n\n$2(4) + 5 = 8 + 5 = 13$ ✓",
@@ -230,7 +230,7 @@
     },
     "pythagore": {
       "nom": "Théorème de Pythagore",
-      "keywords": ["pythagore", "hypoténuse", "hypothenuse", "triangle rectangle"],
+      "keywords": ["Pythagore", "pythagore", "hypoténuse", "hypothenuse", "triangle rectangle"],
       "explanations": {
 		"introduction": "On considère la configuration suivante :",
 		"image": {
@@ -390,7 +390,7 @@
     },
     "puissances": {
       "nom": "Puissances",
-      "keywords": ["puissance", "puissances", "puiss", "exposant", "carré", "cube", "puissance de 10"],
+      "keywords": ["puissance", "puissances", "puiss", "exposant", "carré", "cube", "puissance"],
       "explanations": {
         "definition": "Une puissance est une multiplication répétée :\n\n$a^n = a \\times a \\times a \\times ... \\times a$ ($n$ fois)\n\n📌 Exemples :\n• $2^3 = 2 \\times 2 \\times 2 = 8$\n• $5^2 = 5 \\times 5 = 25$\n• $10^4 = 10 \\times 10 \\times 10 \\times 10 = 10000$",
         "regles": "Règles de calcul :\n\n1️⃣ Multiplication : $a^m \\times a^n = a^{m+n}$\n\n2️⃣ Division : $\\frac{a^m}{a^n} = a^{m-n}$\n\n3️⃣ Puissance de puissance : $(a^m)^n = a^{m \\times n}$\n\n📌 Exemples :\n• $2^3 \\times 2^2 = 2^{3+2} = 2^5 = 32$\n• $\\frac{5^7}{5^4} = 5^{7-4} = 5^3 = 125$\n• $(3^2)^3 = 3^{2 \\times 3} = 3^6 = 729$",
@@ -569,7 +569,7 @@
     },
     "notationScientifique": {
       "nom": "Notation Scientifique",
-      "keywords": ["notation scientifique", "scientifique", "puissance de 10", "écriture scientifique", "ecriture scientifique", "ordre de grandeur"],
+      "keywords": ["notation scientifique", "scientifique", "écriture scientifique", "ecriture scientifique", "ordre de grandeur"],
       "explanations": {
         "definition": "La notation scientifique s'écrit :\n\n$a \\times 10^n$\n\noù :\n• $1 \\leq a < 10$ (un seul chiffre avant la virgule)\n• $n$ est un entier relatif\n\n📌 Exemples :\n• $3500 = 3.5 \\times 10^3$\n• $0.00042 = 4.2 \\times 10^{-4}$\n• $789000000 = 7.89 \\times 10^8$",
         "grandsNombres": "Pour les grands nombres ($n > 0$) :\n\n1️⃣ Déplace la virgule vers la gauche\n2️⃣ Compte le nombre de déplacements = exposant positif\n\n📌 Exemple : $456000$\n• Déplace 5 fois vers la gauche : $4.56$\n• $456000 = 4.56 \\times 10^5$",
@@ -601,7 +601,7 @@
     },
     "conversionsUnites": {
       "nom": "Conversions d'Unités",
-      "keywords": ["conversion", "conversions", "convertir", "unités", "unites", "longueur", "masse", "capacité", "aire", "volume", "durée", "km", "m", "cm", "kg", "g", "L", "heure"],
+      "keywords": ["conversion", "conversions", "convertir", "unités", "unites", "longueur", "masse", "capacité", "aire", "volume", "durée", "heure"],
       "explanations": {
         "longueur": "Unités de longueur :\n\n$\\text{km} \\rightarrow \\text{hm} \\rightarrow \\text{dam} \\rightarrow \\text{m} \\rightarrow \\text{dm} \\rightarrow \\text{cm} \\rightarrow \\text{mm}$\n\nChaque flèche = × 10 ou ÷ 10\n\n📌 Exemples :\n• $1 \\text{ km} = 1000 \\text{ m}$\n• $5.2 \\text{ m} = 520 \\text{ cm}$\n• $3500 \\text{ mm} = 3.5 \\text{ m}$\n• $0.045 \\text{ km} = 45 \\text{ m}$",
         "masse": "Unités de masse :\n\n$\\text{t} \\rightarrow \\text{q} \\rightarrow \\text{XX} \\rightarrow \\text{kg} \\rightarrow \\text{hg} \\rightarrow \\text{dag} \\rightarrow \\text{g} \\rightarrow \\text{dg} \\rightarrow \\text{cg} \\rightarrow \\text{mg}$\n\n📌 Exemples :\n• $1 \\text{ t} = 1000 \\text{ kg}$\n• $2.5 \\text{ kg} = 2500 \\text{ g}$\n• $750 \\text{ g} = 0.75 \\text{ kg}$\n• $3 \\text{ t} = 3000 \\text{ kg}$",
@@ -692,7 +692,7 @@
     },
     "thales": {
       "nom": "Théorème de Thalès",
-      "keywords": ["thalès", "thales", "proportionnalité", "triangles", "parallèles", "paralleles", "réciproque"],
+      "keywords": ["thalès", "thales", "parallèles", "paralleles"],
       "explanations": {
 		"introduction": "On considère les configurations possibles suivantes :",
 		"image": {
@@ -840,7 +840,7 @@
     },
     "trigonometrie": {
       "nom": "Trigonométrie",
-      "keywords": ["trigonométrie", "trigo", "trigonometrie", "cosinus", "sinus", "tangente", "cos", "sin", "tan", "angle", "triangle rectangle"],
+      "keywords": ["trigonométrie", "trigo", "trigonometrie", "cosinus", "sinus", "tangente", "cos", "sin", "tan", "angle"],
       "explanations": {
         "rapports": "Dans un **triangle rectangle** :\n\n$\\cos(\\text{angle}) = \\frac{\\text{Adjacent}}{\\text{Hypoténuse}}$\n\n$\\sin(\\text{angle}) = \\frac{\\text{Opposé}}{\\text{Hypoténuse}}$\n\n$\\tan(\\text{angle}) = \\frac{\\text{Opposé}}{\\text{Adjacent}}$\n\n📐 **SOH-CAH-TOA** pour retenir :\n• **S**inus = **O**pposé / **H**ypoténuse\n• **C**osinus = **A**djacent / **H**ypoténuse\n• **T**angente = **O**pposé / **A**djacent",
         "valeursRemarquables": "**Valeurs remarquables :**\n\n| Angle | 0° | 30° | 45° | 60° | 90° |\n|-------|-----|------|------|------|-----|\n| cos | 1 | $\\frac{\\sqrt{3}}{2}$ | $\\frac{\\sqrt{2}}{2}$ | $\\frac{1}{2}$ | 0 |\n| sin | 0 | $\\frac{1}{2}$ | $\\frac{\\sqrt{2}}{2}$ | $\\frac{\\sqrt{3}}{2}$ | 1 |\n| tan | 0 | $\\frac{\\sqrt{3}}{3}$ | 1 | $\\sqrt{3}$ | ∞ |\n\n📌 À retenir :\n• $\\cos(30°) = \\sin(60°) = \\frac{\\sqrt{3}}{2}$\n• $\\cos(45°) = \\sin(45°) = \\frac{\\sqrt{2}}{2}$\n• $\\cos(60°) = \\sin(30°) = \\frac{1}{2}$",
@@ -909,7 +909,7 @@
     },
     "pourcentages": {
       "nom": "Pourcentages",
-      "keywords": ["pourcentage", "pourcentages", "%", "pourcent", "remise", "réduction", "augmentation"],
+      "keywords": ["pourcentage", "pourcentages", "%", "pourcent", "remise", "réduction", "augmentation", "solde"],
       "explanations": {
         "calcul": "Calculer un pourcentage :\n\n$\\text{Pourcentage} = \\frac{\\text{partie}}{\\text{total}} \\times 100$\n\n📌 Exemple : 15 élèves sur 60\n\n$\\frac{15}{60} \\times 100 = 0.25 \\times 100 = 25\\%$",
         "application": "Appliquer un pourcentage :\n\n$\\text{Résultat} = \\text{valeur} \\times \\frac{\\text{pourcentage}}{100}$\n\n📌 Exemple : 20% de 150€\n\n$150 \\times \\frac{20}{100} = 150 \\times 0.20 = 30\\text{€}$",
