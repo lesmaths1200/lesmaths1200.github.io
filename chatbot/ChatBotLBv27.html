@@ -160,7 +160,8 @@ return ex[Math.floor(Math.random()*ex.length)];
 };
 
 const analyze = (msg) => {
-const m = msg.toLowerCase();
+/* const m = msg.toLowerCase(); */
+const m = msg.toLowerCase().trim();
 if (m === 'menu') {
 return "📚 Thèmes :\n\n" +
 Object.values(mathData.themes).map((t,i)=>`${i+1}. ${t.nom}`).join('\n');
@@ -185,7 +186,9 @@ setLastExercise(ex);
 return `✏️ Exercice (${t.nom})\n\n${ex.question}\n\nTape "solution"`;
 }
 }
-if (m === 'solution' && lastExercise) {
+const solutionKeywords = ['solution', 'solutions', 'soluce', 'soluces', 'solu', 'sol'];
+/* if (m === 'solution' && lastExercise) { */
+if (lastExercise && solutionKeywords.includes(m)) {
 return `✅ ${lastExercise.reponse}`;
 }
 /* 🔍 Recherche par mots-clés */
