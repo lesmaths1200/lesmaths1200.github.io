@@ -601,7 +601,7 @@
     },
     "conversionsUnites": {
       "nom": "Conversions d'Unités",
-      "keywords": ["conversion", "conversions", "convertir", "unités", "unites", "longueur", "masse", "capacité", "aire", "volume", "durée", "heure"],
+      "keywords": ["conversion", "conversions", "convertir", "unités", "unites", "longueur", "masse", "capacité", "durée", "heure"],
       "explanations": {
         "longueur": "Unités de longueur :\n\n$\\text{km} \\rightarrow \\text{hm} \\rightarrow \\text{dam} \\rightarrow \\text{m} \\rightarrow \\text{dm} \\rightarrow \\text{cm} \\rightarrow \\text{mm}$\n\nChaque flèche = × 10 ou ÷ 10\n\n📌 Exemples :\n• $1 \\text{ km} = 1000 \\text{ m}$\n• $5.2 \\text{ m} = 520 \\text{ cm}$\n• $3500 \\text{ mm} = 3.5 \\text{ m}$\n• $0.045 \\text{ km} = 45 \\text{ m}$",
         "masse": "Unités de masse :\n\n$\\text{t} \\rightarrow \\text{q} \\rightarrow \\text{XX} \\rightarrow \\text{kg} \\rightarrow \\text{hg} \\rightarrow \\text{dag} \\rightarrow \\text{g} \\rightarrow \\text{dg} \\rightarrow \\text{cg} \\rightarrow \\text{mg}$\n\n📌 Exemples :\n• $1 \\text{ t} = 1000 \\text{ kg}$\n• $2.5 \\text{ kg} = 2500 \\text{ g}$\n• $750 \\text{ g} = 0.75 \\text{ kg}$\n• $3 \\text{ t} = 3000 \\text{ kg}$",
@@ -644,7 +644,7 @@
         "figuresPlanes2D": "📐 FIGURES PLANES (2D) :\n\n**Carré** (côté $c$) :\n• Périmètre : $P = 4c$\n• Aire : $A = c^2$\n\n**Rectangle** (longueur $L$, largeur $l$) :\n• Périmètre : $P = 2(L + l)$\n• Aire : $A = L \\times l$\n\n**Triangle** (côtés $a, b, c$, base $b$, hauteur $h$) :\n• Périmètre : $P = a + b + c$\n• Aire : $A = \\frac{b \\times h}{2}$",
         "cercleDisque": "⭕ CERCLE ET DISQUE :\n\n**Cercle** (rayon $r$, diamètre $d$) :\n• Périmètre (circonférence) : $P = 2\\pi r = \\pi d$\n\n**Disque** (rayon $r$) :\n• Aire : $A = \\pi r^2$\n\n📌 Exemples :\n• Rayon = 5 cm\n• Périmètre ≈ $2 \\times 3.14 \\times 5 ≈ 31.4 \\text{ cm}$\n• Aire ≈ $3.14 \\times 5^2 ≈ 78.5 \\text{ cm}^2$",
         "autresFigures": "📐 AUTRES FIGURES PLANES :\n\n**Parallélogramme** (base $b$, hauteur $h$) :\n• Aire : $A = b \\times h$\n\n**Trapèze** (petite base $b$, grande base $B$, hauteur $h$) :\n• Aire : $A = \\frac{(b + B) \\times h}{2}$\n\n**Triangle rectangle** (côtés $a$ et $b$ de l'angle droit) :\n• Aire : $A = \\frac{a \\times b}{2}$",
-        "solides3D": "📦 SOLIDES (3D) :\n\n**Cube** (arête $a$) :\n• Volume : $V = a^3$\n• Aire totale : $A = 6a^2$\n\n**Pavé droit** (longueur $L$, largeur $l$, hauteur $h$) :\n• Volume : $V = L \\times l \\times h$\n\n**Cylindre** (rayon $r$, hauteur $h$) :\n• Volume : $V = \\pi r^2 h$\n• Aire latérale : $A_L = 2\\pi r h$",
+        "solides3D": "📦 SOLIDES (3D) :\n\n**Cube** (arête $a$) :\n• Volume : $V = a^3$\n• Aire totale : $A = 6a^2$\n\n**Pavé droit** (longueur $L$, largeur $l$, hauteur $h$) :\n• Volume : $V = L \\times l \\times h$\n\n**Cylindre** (rayon $r$, hauteur $h$) :\n• Volume : $V = \\pi r^2 h$\n• Aire totale : $A_L = 2\\pi r h + 2\\pi r^2$",
         "pyramidesCones": "🔺 PYRAMIDES ET CÔNES :\n\n**Pyramide** (aire de base $A_b$, hauteur $h$) :\n• Volume : $V = \\frac{A_b \\times h}{3}$\n\n**Cône** (rayon $r$, hauteur $h$) :\n• Volume : $V = \\frac{\\pi r^2 h}{3}$\n\n**Boule/Sphère** (rayon $r$) :\n• Volume : $V = \\frac{4\\pi r^3}{3}$\n• Aire : $A = 4\\pi r^2$"
       },
       "exercices": [
