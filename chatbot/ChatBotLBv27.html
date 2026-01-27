@@ -149,7 +149,8 @@ const [dark, setDark] = useState(false);
 const endRef = useRef(null);
 
 useEffect(() => { document.body.classList.toggle('dark', dark); }, [dark]);
-useEffect(() => { fetch('mathData3.json').then(r=>r.json()).then(setMathData); }, []);
+useEffect(() => { fetch('mathData3_enrichi_TAF.json').then(r=>r.json()).then(setMathData); }, []);
+/*useEffect(() => { fetch('mathData3.json').then(r=>r.json()).then(setMathData); }, []); */
 useEffect(() => { endRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages]);
 
 if (!mathData) return null;
