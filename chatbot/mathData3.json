@@ -843,8 +843,13 @@
       "keywords": ["trigonométrie", "trigo", "trigonometrie", "cosinus", "sinus", "tangente", "cos", "sin", "tan", "angle"],
       "explanations": {
         "rapports": "Dans un **triangle rectangle** :\n\n$\\cos(\\text{angle}) = \\frac{\\text{Adjacent}}{\\text{Hypoténuse}}$\n\n$\\sin(\\text{angle}) = \\frac{\\text{Opposé}}{\\text{Hypoténuse}}$\n\n$\\tan(\\text{angle}) = \\frac{\\text{Opposé}}{\\text{Adjacent}}$\n\n📐 **SOH-CAH-TOA** pour retenir :\n• **S**inus = **O**pposé / **H**ypoténuse\n• **C**osinus = **A**djacent / **H**ypoténuse\n• **T**angente = **O**pposé / **A**djacent",
-        "valeursRemarquables": "**Valeurs remarquables :**\n\n| Angle | 0° | 30° | 45° | 60° | 90° |\n|-------|-----|------|------|------|-----|\n| cos | 1 | $\\frac{\\sqrt{3}}{2}$ | $\\frac{\\sqrt{2}}{2}$ | $\\frac{1}{2}$ | 0 |\n| sin | 0 | $\\frac{1}{2}$ | $\\frac{\\sqrt{2}}{2}$ | $\\frac{\\sqrt{3}}{2}$ | 1 |\n| tan | 0 | $\\frac{\\sqrt{3}}{3}$ | 1 | $\\sqrt{3}$ | ∞ |\n\n📌 À retenir :\n• $\\cos(30°) = \\sin(60°) = \\frac{\\sqrt{3}}{2}$\n• $\\cos(45°) = \\sin(45°) = \\frac{\\sqrt{2}}{2}$\n• $\\cos(60°) = \\sin(30°) = \\frac{1}{2}$",
-        "calculAngle": "**Calculer un angle :**\n\nUtilise les fonctions inverses :\n• $\\text{angle} = \\cos^{-1}\\left(\\frac{\\text{Adjacent}}{\\text{Hypoténuse}}\\right)$\n• $\\text{angle} = \\sin^{-1}\\left(\\frac{\\text{Opposé}}{\\text{Hypoténuse}}\\right)$\n• $\\text{angle} = \\tan^{-1}\\left(\\frac{\\text{Opposé}}{\\text{Adjacent}}\\right)$\n\n📌 Exemple :\nOpposé = 3, Hypoténuse = 5\n$\\sin(\\text{angle}) = \\frac{3}{5} = 0.6$\n$\\text{angle} = \\sin^{-1}(0.6) ≈ 37°$",
+        "valeursRemarquables": "💡**Valeurs remarquables :**",
+        "image": {
+          "src": "trigo.jpg",
+          "alt": "Valeurs remarquables"
+        },
+		"cos-sin-tan-30456090":"\n📌 À retenir :\n• $\\cos(30°) = \\sin(60°) = \\frac{\\sqrt{3}}{2}$\n• $\\cos(45°) = \\sin(45°) = \\frac{\\sqrt{2}}{2}$\n• $\\cos(60°) = \\sin(30°) = \\frac{1}{2}$",
+		"calculAngle": "**Calculer un angle :**\n\nUtilise les fonctions inverses :\n• $\\text{angle} = \\cos^{-1}\\left(\\frac{\\text{Adjacent}}{\\text{Hypoténuse}}\\right)$\n• $\\text{angle} = \\sin^{-1}\\left(\\frac{\\text{Opposé}}{\\text{Hypoténuse}}\\right)$\n• $\\text{angle} = \\tan^{-1}\\left(\\frac{\\text{Opposé}}{\\text{Adjacent}}\\right)$\n\n📌 Exemple :\nOpposé = 3, Hypoténuse = 5\n$\\sin(\\text{angle}) = \\frac{3}{5} = 0.6$\n$\\text{angle} = \\sin^{-1}(0.6) ≈ 37°$",
         "calculLongueur": "**Calculer une longueur :**\n\n📌 Exemple 1 : Angle = 30°, Hypoténuse = 10 cm\nTrouver l'Adjacent :\n$\\cos(30°) = \\frac{\\text{Adjacent}}{10}$\n$\\text{Adjacent} = 10 \\times \\cos(30°)$\n$= 10 \\times \\frac{\\sqrt{3}}{2} ≈ 8.66 cm$\n\n📌 Exemple 2 : Angle = 45°, Adjacent = 5 cm\nTrouver l'Opposé :\n$\\tan(45°) = \\frac{\\text{Opposé}}{5}$\n$\\text{Opposé} = 5 \\times \\tan(45°) = 5 \\times 1 = 5 cm$"
       },
       "exercices": [
