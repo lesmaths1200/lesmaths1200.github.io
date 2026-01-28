@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Assistant Mathématiques Cycle d'orientation - Collège</title>
+<title>Mon assistant de mathématiques - niveau cycle d'orientation</title>
 
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
@@ -40,47 +40,83 @@ body.dark input {
   border-color: #1e293b;
 }
 
-/* Header et Footer zones */
-#header-zone { 
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  z-index: 200; 
-}
-
-#footer-zone { 
-  position: fixed; 
-  bottom: 72px; 
-  left: 0; 
-  right: 0; 
-  z-index: 200; 
-}
-
-#chat-scroll {
-  position: absolute;
-  inset: 0 0 72px 0;
-  overflow-y: auto;
-  padding: 16px;
-}
-
 #input-bar {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 72px;
+  height: auto;
+  min-height: 72px;
   z-index: 100;
 }
 
+#chat-scroll {
+  position: absolute;
+  inset: 0 0 140px 0;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  #chat-scroll {
+    inset: 0 0 72px 0;
+  }
+}
+
 .katex { font-size: 1.1em; }
+
+/* Style pour le badge TAF */
+.taf-badge {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+}
+
+.mode-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.mode-taf {
+  background: #dc2626;
+  color: white;
+}
+
+.mode-normal {
+  background: #3b82f6;
+  color: white;
+}
 </style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les maths 1200</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
 </head>
 
 <body>
-<div id="header-zone"></div>
+<header></header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $("header").load("header.html");
+      });
+    </script>
+	
 <div id="root"></div>
-<div id="footer-zone"></div>
 
 <script type="text/babel">
 const { useState, useEffect, useRef } = React;
@@ -104,6 +140,13 @@ const YoutubeIcon = () => (
 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
 <path d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+</svg>
+);
+
+const TAFIcon = () => (
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+<path d="M9 11l3 3L22 4"></path>
+<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
 </svg>
 );
 
@@ -142,35 +185,35 @@ const MathContent = ({ content }) => {
 
 const App = () => {
 const [messages, setMessages] = useState([
-{ type: 'bot', text: "Bonjour ! 👋\nChoisis un thème ou un exercice." }
+{ type: 'bot', text: "Bonjour ! 👋\n\nChoisis un rappel de cours ou un exercice en cliquant sur les boutons ci-dessus ou ...\n\n💡 Astuce n°1 : exemple: tape « cours 3 » pour accéder au rappel de cours sur le théorème de Pythagore (clique sur le bouton Menu pour voir la correspondance).\n\n💡 Astuce n°2 : tu peux aussi taper un mot-clé comme « Pythagore », « racine », « pourcentage ».\n\n📝 Clique sur Solution pour obtenir la solution du dernier exercice cherché. Plusieurs exercices disponibles pour chaque thème.\n\n🎯 Mode TAF : Active le mode TAF pour réviser spécifiquement le champ du test d'attentes fondamentales 2025-2026 !" }
 ]);
 const [input, setInput] = useState('');
 const [mathData, setMathData] = useState(null);
 const [lastExercise, setLastExercise] = useState(null);
 const [dark, setDark] = useState(false);
+const [tafMode, setTafMode] = useState(false);
 const endRef = useRef(null);
+const chatScrollRef = useRef(null);
 
 useEffect(() => { document.body.classList.toggle('dark', dark); }, [dark]);
+
+// Charger le fichier JSON approprié selon le mode
 useEffect(() => { 
-  // Charger mathData
-  fetch('mathData3.json').then(r=>r.json()).then(setMathData);
-  
-  // Charger header.html
-  fetch('header.html')
-    .then(r => r.text())
-    .then(html => {
-      document.getElementById('header-zone').innerHTML = html;
+  const filename = tafMode ? 'mathDatav0_TAF.json' : 'mathDatav0.json';
+  fetch(filename)
+    .then(r => r.json())
+    .then(data => {
+      setMathData(data);
+      setLastExercise(null); // Réinitialiser l'exercice en cours
     })
-    .catch(err => console.log('Header non trouvé:', err));
-  
-  // Charger footer.html
-  fetch('footer.html')
-    .then(r => r.text())
-    .then(html => {
-      document.getElementById('footer-zone').innerHTML = html;
-    })
-    .catch(err => console.log('Footer non trouvé:', err));
-}, []);
+    .catch(err => {
+      console.error('Erreur de chargement:', err);
+      // Fallback sur mathData3.json si le fichier TAF n'est pas trouvé
+      if (tafMode) {
+        fetch('mathData3.json').then(r=>r.json()).then(setMathData);
+      }
+    });
+}, [tafMode]);
 
 useEffect(() => { endRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages]);
 
@@ -182,10 +225,18 @@ return ex[Math.floor(Math.random()*ex.length)];
 };
 
 const analyze = (msg) => {
-const m = msg.toLowerCase();
+const m = msg.toLowerCase().trim();
 if (m === 'menu') {
+// Scroll vers le haut dans le conteneur de chat
+setTimeout(() => {
+  const chatScroll = document.getElementById('chat-scroll');
+  if (chatScroll) {
+    chatScroll.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}, 100);
 return "📚 Thèmes :\n\n" +
-Object.values(mathData.themes).map((t,i)=>`${i+1}. ${t.nom}`).join('\n');
+Object.values(mathData.themes).map((t,i)=>`${i+1}. ${t.nom}`).join('\n') +
+"\n\n⬆️ Les boutons de cours et exercices sont disponibles en haut de la page.";
 }
 if (m.startsWith('cours')) {
 const n = m.match(/cours (\d+)/);
@@ -207,8 +258,21 @@ setLastExercise(ex);
 return `✏️ Exercice (${t.nom})\n\n${ex.question}\n\nTape "solution"`;
 }
 }
-if (m === 'solution' && lastExercise) {
+const solutionKeywords = ['solution', 'solutions', 'soluce', 'soluces', 'solu', 'sol'];
+if (lastExercise && solutionKeywords.includes(m)) {
 return `✅ ${lastExercise.reponse}`;
+}
+// 🔍 Recherche par mots-clés
+for (const theme of Object.values(mathData.themes)) {
+  if (!theme.keywords) continue;
+  for (const kw of theme.keywords) {
+    if (m.includes(kw.toLowerCase())) {
+      return {
+        title: theme.nom,
+        explanations: theme.explanations
+      };
+    }
+  }
 }
 return "❓";
 };
@@ -229,22 +293,39 @@ pushAction(input);
 setInput('');
 };
 
+const toggleTafMode = () => {
+  setTafMode(prev => !prev);
+  setMessages([
+    { 
+      type: 'bot', 
+      text: !tafMode 
+        ? "🎯 Mode TAF activé !\n\nTu as maintenant accès aux exercices enrichis conformes au champ du test d'attentes fondamentales (TAF) de mathématiques de 11e (2025-2026).\n\nNouveau contenu disponible :\n• Puissances et racines carrées\n• Divisibilité et nombres premiers\n• Entiers relatifs\n• Suites numériques\n• Proportionnalité et échelles\n• Calcul littéral\n• Géométrie plane et solides\n• Repérage dans le plan\n• Grandeurs et mesures\n• Théorème de Pythagore\n\n📚 Clique sur Menu pour voir tous les thèmes disponibles !" 
+        : "📘 Mode Normal activé !\n\nTu es revenu au contenu standard. Choisis un thème pour commencer !"
+    }
+  ]);
+};
+
 return (
 <>
 <div id="chat-scroll" className="chat-bg">
 <div className="max-w-4xl mx-auto">
 
 <div className="card p-4 rounded-lg mb-3">
+<div className="flex items-center justify-between">
 <h1 className="text-xl font-bold flex items-center gap-2">
-<CalculatorIcon/> Maths Cycle d'orientation - collège
+<CalculatorIcon/> Mon assistant de mathématiques - niveau cycle d'orientation
 </h1>
+<span className={`mode-indicator ${tafMode ? 'mode-taf' : 'mode-normal'}`}>
+{tafMode ? '🎯 Mode TAF' : '📘 Mode Normal'}
+</span>
+</div>
 </div>
 
 <div className="flex flex-wrap gap-2 mb-2">
 {Object.values(mathData.themes).map((t,i)=>(
 <button key={i}
 onClick={()=>pushAction(`cours ${i+1}`)}
-className="px-3 py-1 bg-blue-600 text-white rounded-full text-xs">
+className="px-3 py-1 bg-blue-600 text-white rounded-full text-xs hover:bg-blue-700 transition">
 Cours — {t.nom}
 </button>
 ))}
@@ -254,7 +335,7 @@ Cours — {t.nom}
 {Object.values(mathData.themes).map((t,i)=>(
 <button key={i}
 onClick={()=>pushAction(`exercice ${i+1}`)}
-className="px-3 py-1 bg-green-600 text-white rounded-full text-xs">
+className="px-3 py-1 bg-green-600 text-white rounded-full text-xs hover:bg-green-700 transition">
 Exercice — {t.nom}
 </button>
 ))}
@@ -273,37 +354,54 @@ Exercice — {t.nom}
 </div>
 
 <div id="input-bar" className="input-bar">
-<div className="max-w-4xl mx-auto p-3 flex items-center gap-2">
+<div className="max-w-4xl mx-auto p-3">
+{/* Première ligne : Menu, Solution, TAF, YouTube, Dark mode */}
+<div className="flex items-center gap-2 mb-2 md:mb-0 flex-wrap md:flex-nowrap">
 <button onClick={()=>pushAction('menu')}
-className="px-4 py-2 bg-purple-600 text-white rounded-full text-sm">
+className="px-4 py-2 bg-purple-600 text-white rounded-full text-sm hover:bg-purple-700 transition">
 Menu
 </button>
 
 <button
 onClick={()=>{ if (lastExercise) pushAction('solution'); }}
-className="px-4 py-2 bg-yellow-400 text-black rounded-full text-sm font-semibold">
+className="px-4 py-2 bg-yellow-400 text-black rounded-full text-sm font-semibold hover:bg-yellow-500 transition">
 Solution
 </button>
 
+<button 
+onClick={toggleTafMode}
+className={`px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-1 transition ${
+  tafMode 
+    ? 'bg-red-600 text-white hover:bg-red-700 taf-badge' 
+    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+}`}>
+<TAFIcon />
+{tafMode ? 'TAF' : 'TAF'}
+</button>
+
 <button onClick={()=>window.open('https://www.youtube.com/@lesmaths1200','_blank')}
-className="px-4 py-2 bg-red-600 text-white rounded-full text-sm">
+className="px-4 py-2 bg-red-600 text-white rounded-full text-sm hover:bg-red-700 transition">
 YouTube
 </button>
 
 <button onClick={()=>setDark(d=>!d)}
-className="px-3 py-2 rounded-full text-sm border">
+className="px-3 py-2 rounded-full text-sm border hover:bg-gray-100 dark:hover:bg-gray-800 transition">
 {dark?'☀️':'🌙'}
 </button>
 
+{/* Deuxième ligne sur mobile : Input et bouton Envoyer - Sur desktop, tout sur une ligne */}
+<div className="flex items-center gap-2 w-full md:w-auto md:flex-1">
 <input value={input}
 onChange={e=>setInput(e.target.value)}
 onKeyDown={e=>e.key==='Enter' && send()}
-placeholder="Pose ta question…"
+placeholder="Fais ton choix"
 className="flex-1 border rounded-lg px-3 py-2 text-sm"/>
 
-<button onClick={send} className="bg-black text-white px-4 py-2 rounded-lg">
+<button onClick={send} className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
 <SendIcon/>
 </button>
+</div>
+</div>
 </div>
 </div>
 </>
